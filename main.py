@@ -269,12 +269,14 @@ def committees():
     data["AreaChairs"] = open("AreaChairs.md").read()
     return render_template("committees.html", **data)
 
+
 @app.route("/members.html")
 def members():
     data = _data()
     data["CurrentMember"] = site_data["committee"]["committee"]
     data["AreaChairs"] = open("Alumni.md").read()
     return render_template("members.html", **data)
+
 
 @app.route("/AuthorGuide.html")
 def authorguide():
@@ -337,17 +339,20 @@ def survey():
 #     data["FAQ"] = site_data["faq"]["FAQ"]
 #     return render_template("faq.html", **data)
 
+
 @app.route("/contact.html")
 def faq():
     data = _data()
     data["Opening"] = open("AuthorGuide.md").read()
     return render_template("contact.html", **data)
 
+
 @app.route("/prehkust.html")
 def prehkust():
     data = _data()
     data["PreHKUST"] = open("PreHKUST.md").read()
     return render_template("prehkust.html", **data)
+
 
 # FRONT END SERVING
 
