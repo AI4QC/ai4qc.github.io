@@ -87,21 +87,41 @@ workshopgroup
       <div class="pp-card-header" class="text-muted">
         <a href="{{org.ws}}"><h5 class="card-title" align="center">{{org.name}}</h5></a>
         <div>
-          <h6 class="card-subtitle text-muted m-1" align="center">
+          <h6 class="card-subtitle " align="center">
             {{org.role}}
           </h6>
         </div>
         <div>
           <h6 class="card-subtitle text-muted m-1" align="center">
-            {{org.aff}}{% if org.tw %} /
-            <a class="text-muted" href="http://twitter.com/{{org.tw}}"
-              >@{{org.tw}}</a
-            >{% endif %}
+            {{org.phd}}
           </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            {{org.undergrad}}
+          </h6>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:{{org.email}}"
+              >✉️</a
+            >{% if org.tw %}
+            <a class="text-muted" href="http://twitter.com/{{org.tw}}"
+              > @{{org.tw}}</a
+            >{% endif %}
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/{{org.git}}"
+              >GitHub: {{org.git}}</a>
+        </h6>
         </div>
         <center>
           <a href="{{org.ws}}"></a>
-          <img src="{{org.im}}" class="rounded" style="height: 150px;" />
+          <img src="{{org.im}}" class="rounded" style="height: 140px;" />
         </a>
         </center>
       </div>

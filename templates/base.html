@@ -58,7 +58,7 @@
     <link rel="stylesheet" href="static/css/fa_solid.css"/>
     <link rel="stylesheet" href="static/css/lazy_load.css"/>
     <link rel="stylesheet" href="static/css/typeahead.css"/>
-    <link rel="icon" href="/favicon.svg"/>
+    <link rel="icon" href="/logo.jpg"/>
     <title>{{config.page_title.prefix}}{% if page_title
         %}{{config.page_title.separator}}{{page_title}}{% endif %}</title>
     {% endblock %}
@@ -69,17 +69,13 @@
 {% block header %}
 {% set navigation_bar = [
 ('index.html', 'Home', []),
-('dates.html', 'Dates', []),
-('faq.html', 'FAQ', []),
-('workshops.html', 'Workshops', []),
-('#', 'Calls', [('cfp.html', 'Call for Papers'), ('cfw.html', 'Call for Workshops')]),
-('#', 'Guides', [('CoC.html', 'Code of Conduct'),
-                 ('CoE.html', 'Code of Ethics'),
-                 ('ReviewGuide.html', 'Review Guidelines'),
-                 ('ac-guidelines.html', 'AC Guidelines'),
-                 ('AuthorGuide.html', 'Author Guide'),
-                 ('coi-policy.html', 'COI Policy'),]),
-('#', 'Organization', [('committees.html', 'Organizing Committee'),('board.html', 'Board')]),
+('#', 'Research', [('overview.html', 'Overview'),('simulator.html', 'Simulator'), ('emulator.html', 'Emulator'), ('predictor.html', 'Predictor'), ('evaluator_agent.html', 'Evaluator & Agent'),]),
+('members.html', 'Members', []),
+('#', 'Publications', [('prehkust.html', 'pre-HKUST'),('papers.html', 'HKUST'),]),
+('#', 'Courses', [('tba.html', 'TBA'),]),
+('news.html', 'News', []),
+('contact.html', 'Openings', []),
+('#', 'Tools', [('transorb.html', 'Orbital-based learning'),('odbo.html', 'ODBO')]),
 ] -%}
 
 <nav

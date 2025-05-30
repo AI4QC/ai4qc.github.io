@@ -1,4 +1,4 @@
-## COLM
+## Adapt from COLM
 
 To change the COLM website, first setup your venv. Then: 
 

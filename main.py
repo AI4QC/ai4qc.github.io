@@ -59,9 +59,9 @@ def index():
     return redirect("/index.html")
 
 
-@app.route("/favicon.svg")
+@app.route("/logo.jpg")
 def favicon():
-    return send_from_directory(site_data_path, "favicon.svg")
+    return send_from_directory(site_data_path, "logo.jpg")
 
 
 # TOP LEVEL PAGES
@@ -82,17 +82,17 @@ def about():
     return render_template("help.html", **data)
 
 
-# @app.route("/papers.html")
-# def papers():
-#     data = _data()
-#     data["papers"] = site_data["papers"]
-#     return render_template("papers.html", **data)
+@app.route("/papers.html")
+def papers():
+    data = _data()
+    data["papers"] = site_data["papers"]
+    return render_template("papers.html", **data)
 
 
-# @app.route("/paper_vis.html")
-# def paper_vis():
-#     data = _data()
-#     return render_template("papers_vis.html", **data)
+@app.route("/paper_vis.html")
+def paper_vis():
+    data = _data()
+    return render_template("papers_vis.html", **data)
 
 
 # @app.route("/calendar.html")
@@ -213,11 +213,11 @@ def cfw():
     return render_template("cfw.html", **data)
 
 
-@app.route("/board.html")
-def board():
-    data = _data()
-    data["board"] = site_data["committee"]["board"]
-    return render_template("board.html", **data)
+# @app.route("/board.html")
+# def board():
+#     data = _data()
+#     data["board"] = site_data["committee"]["board"]
+#     return render_template("board.html", **data)
 
 
 @app.route("/program-overview.html")
@@ -269,6 +269,12 @@ def committees():
     data["AreaChairs"] = open("AreaChairs.md").read()
     return render_template("committees.html", **data)
 
+@app.route("/members.html")
+def members():
+    data = _data()
+    data["CurrentMember"] = site_data["committee"]["committee"]
+    data["AreaChairs"] = open("Alumni.md").read()
+    return render_template("members.html", **data)
 
 @app.route("/AuthorGuide.html")
 def authorguide():
@@ -325,22 +331,33 @@ def survey():
     return render_template("survey.html", **data)
 
 
-@app.route("/faq.html")
+# @app.route("/faq.html")
+# def faq():
+#     data = _data()
+#     data["FAQ"] = site_data["faq"]["FAQ"]
+#     return render_template("faq.html", **data)
+
+@app.route("/contact.html")
 def faq():
     data = _data()
-    data["FAQ"] = site_data["faq"]["FAQ"]
-    return render_template("faq.html", **data)
+    data["Opening"] = open("AuthorGuide.md").read()
+    return render_template("contact.html", **data)
 
+@app.route("/prehkust.html")
+def prehkust():
+    data = _data()
+    data["PreHKUST"] = open("PreHKUST.md").read()
+    return render_template("prehkust.html", **data)
 
 # FRONT END SERVING
 
 
-# @app.route("/papers.json")
-# def paper_json():
-#     json = []
-#     for v in site_data["papers"]:
-#         json.append(format_paper(v))
-#     return jsonify(json)
+@app.route("/papers.json")
+def paper_json():
+    json = []
+    for v in site_data["papers"]:
+        json.append(format_paper(v))
+    return jsonify(json)
 
 
 @app.route("/static/<path:path>")

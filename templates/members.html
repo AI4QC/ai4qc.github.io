@@ -1,0 +1,19 @@
+{% set active_page = "Committee" %} {% extends "base.html" %}
+
+{% block content %} 
+
+
+{{ components.section("Current member") }}
+{{ components.organizergroup(CurrentMember)}}
+
+<!-- Area Chairs -->
+{{ components.section("Alumni") }}
+<div class="h5" style="line-height: 1.5;">
+    {{ AreaChairs | markdown }}
+</div>
+
+{{ components.section("Friends & Collaborators") }}
+<div class="h5" style="line-height: 1.5;">
+    TBA
+</div>
+{% endblock %}

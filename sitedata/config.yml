@@ -1,20 +1,20 @@
-name: CoLM
-tagline: CONFERENCE ON <br> LANGUAGE <br> MODELING
-date: October 7-10, 2025
-citation_date: May 2025
-proceedings_title: Proceedings of the Second COLM Conference
+name: AI4QC Lab
+tagline: Welcome to AI4Chemistry Lab @ HKUST
+#date: October 7-10, 2025
+#citation_date: May 2025
+#proceedings_title: Proceedings of the Second COLM Conference
 analytics: UA-
 logo:
-  image: static/images/logo.svg
+  image: static/images/ai4qclogo.png
   width: 180px
   height: auto
 # uncomment the following line to show the site title next to the logo image
 # site_title: MiniConf
 page_title:
-  prefix: "COLM 2025"
+  prefix: "AI4Chemistry Lab"
   separator: ": "
-background_image: static/images/montreal.jpg
-organization: COLM Organization Committee
+background_image: static/images/hkust.jpg
+organization:  AI4Chemistry Lab, The Hong Kong University of Science and Technology. 
 
 # Configuration for auth
 #Test user
