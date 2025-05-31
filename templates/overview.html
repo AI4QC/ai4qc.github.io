@@ -1,0 +1,52 @@
+{% set active_page = "Overview" %}
+{% set page_title = "Overview" %}
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- Contact -->
+    {{ components.section("Overview") }}
+    <p>Our lab is an AI for Science research group centered at quantum and computational chemistry. We focus on building practical, reliable, and user-friendly tools using AI, quantum computing, and physics-driven approaches. Our goal is to create a general and efficient framework that bridges data-driven models with fundamental quantum mechanical theories, providing accurate and scalable solutions for chemical problems. We actively work on multi-scale modeling strategies via highly accurate simulators, emulators, predictors and evaluators/agents to achieve a collaborative efforts of AI, computational chemistry and experimentalists.</p>
+
+    <h3>
+        🔬✨ Research Interest Summary
+    </h3>
+    <div class="h5" style="line-height: 1.5;">
+
+    <title>Insert image</title>
+    <style>
+    .image-container {
+      text-align: center; /* center the image within the container */
+    }
+
+    .image-container img {
+      width: 70%;       /* shrink image to 50% of the container's width */
+      height: auto;     /* maintain aspect ratio */
+      display: block;   /* so margin: auto works if needed */
+      margin: 0 auto;   /* center the image horizontally */
+    }
+    </style>
+    </head>
+    <body>
+
+      <div class="image-container">
+    <img src="static/images/overview.jpeg" alt="Overview of our interests">
+  </div>
+
+    {{ components.section("Focus on Challenges in AI4S") }}
+
+
+  <div class="image-container">
+    <img src="static/images/challenge.jpeg" alt="Challenge of AI4S">
+  </div>
+
+
+    <h3>
+        ⚙️🔗 Our Approach: Multiscale + Physics driven modeling in AI4Chemistry
+    </h3>
+    <div class="h5" style="line-height: 1.5;">
+    <p><b>Toward a fast, accurate and general foundation model to computational chemistry and its applications via AI and quantum computing</b></p>
+  <div class="image-container">
+    <img src="static/images/approach.jpeg" alt="approaches">
+  </div>
+
+{% endblock %}

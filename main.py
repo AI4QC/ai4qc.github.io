@@ -347,6 +347,13 @@ def faq():
     return render_template("contact.html", **data)
 
 
+@app.route("/overview.html")
+def overview():
+    data = _data()
+    # data["Opening"] = open("AuthorGuide.md").read()
+    return render_template("overview.html", **data)
+
+
 @app.route("/prehkust.html")
 def prehkust():
     data = _data()
