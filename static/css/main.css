@@ -1,9 +1,9 @@
 body a {
-  color: #2294e0;
+  color: #123261;
 }
 
 body a:hover {
-  color: #2294e0;
+  color: #123261;
   text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .jumbotron {
   font-family: "Lato", sans-serif;
-  background-color: rgba(236, 241, 246, 1);
+  background-color: rgba(92, 141, 195, 1);
 }
 
 .btn-group {
@@ -97,7 +97,7 @@ body {
 }
 
 body .nav-pills .nav-link.active {
-  background-color: #bed972;
+  background-color: #A28444;
 }
 
 .container {
@@ -149,7 +149,7 @@ h3.card-subtitle.text-muted {
 
 .main-title {
   font-weight: 700;
-  color: #2294e0;
+  color: #123261;
   font-family: "Exo";
 }
 
@@ -301,7 +301,7 @@ body .carousel-control-prev {
 
 .checkbox-bookmark.selected {
   opacity: 1;
-  color: #bed972;
+  color: #A28444;
 }
 
 /*@supports (-webkit-text-stroke: 1px gray) {*/
@@ -313,6 +313,6 @@ body .carousel-control-prev {
 
 /*  .checkbox-paper.selected {*/
 /*    opacity: 1;*/
-/*    -webkit-text-fill-color: #bed972;*/
+/*    -webkit-text-fill-color: #A28444;*/
 /*  }*/
 /*}*/

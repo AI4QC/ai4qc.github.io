@@ -350,8 +350,37 @@ def faq():
 @app.route("/overview.html")
 def overview():
     data = _data()
-    # data["Opening"] = open("AuthorGuide.md").read()
     return render_template("overview.html", **data)
+
+
+@app.route("/simulator.html")
+def simulator():
+    data = _data()
+    return render_template("simulator.html", **data)
+
+
+@app.route("/emulator.html")
+def emulator():
+    data = _data()
+    return render_template("emulator.html", **data)
+
+
+@app.route("/predictor.html")
+def predictor():
+    data = _data()
+    return render_template("predictor.html", **data)
+
+
+@app.route("/evaluator_agent.html")
+def evaluator_agent():
+    data = _data()
+    return render_template("evaluator_agent.html", **data)
+
+
+@app.route("/news.html")
+def news():
+    data = _data()
+    return render_template("news.html", **data)
 
 
 @app.route("/prehkust.html")
