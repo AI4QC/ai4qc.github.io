@@ -1,4 +1,4 @@
-[19] Foster, A.<sup>\*</sup>; Sch\"{a}tzle, Z.<sup>\*</sup>; Szab\'{o}}, P. B.<sup>\*</sup>; **Cheng, L.**<sup>\*</sup>; K\"{o}hler, J.; Cassella, G.; Gao, N.; Li, J. ; No\'{e}, F.; Hermann, J. A Wavefunction Foundation Model that Accurately Describes Bond Breaking. In progress, **2025**. (\*co-first author)
+[19] Foster, A.<sup>\*</sup>; Schatzle, Z.<sup>\*</sup>; Szabo, P. B.<sup>\*</sup>; **Cheng, L.**<sup>\*</sup>; Kohler, J.; Cassella, G.; Gao, N.; Li, J. ; Noe, F.; Hermann, J. A Wavefunction Foundation Model that Accurately Describes Bond Breaking. In progress, **2025**. (\*co-first author)
 
 [18] Jacobson, G.<sup>\*</sup>; **Cheng, L.**<sup>\*</sup>; Sun, J; Bhethanabotla, V; McCoy, A. B., Machine Learning Approaches for Developing Potential Surfaces: Applications to OH-(H2O)n (n=1-3) Complexes. *J. Phys. Chem. A*, **2025**. (\*co-first author)[Link](https://pubs.acs.org/doi/abs/10.1021/acs.jpca.4c08826)
 
