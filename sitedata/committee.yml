@@ -3,9 +3,12 @@ committee:
     name: Lixue Cheng (Sherry)
     phd: PhD, California Institute of Technology
     undergrad: BS, University of Wisconsin-Madison
+    alumni: Prev. Microsoft Research, Tencent Quantum Lab 
     im: static/images/sherry.jpg
     email: sherrylixuecheng@gmail.com
     tw: SherryLixueC
     ws: https://sherrylixuecheng.github.io/
     git: sherrylixuecheng
 
+  - role: TBA
+    name: Can be you
