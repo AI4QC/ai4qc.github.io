@@ -16,7 +16,7 @@
     }
 
     .image-wrapper img {
-      width: 100%;
+      width: 80%;
       height: auto;
       display: block;
     }
@@ -66,17 +66,22 @@
     <div class="image-wrapper1">
       <img src="static/images/deepQMC_formula.png" alt="Formula">
     </div>
-    <p class="h4"> <b> 🧪 General formualtion & Status of Deep QMC: </b></p>
+    <p></p> <p class="h4"> <b> 🧪 General formualtion & Status of Deep QMC: </b></p>
     <p> ✅ Many good results on both ground state & excited state problems</p>
     <p style="color: crimson;"> 🚧  Problem 1. Still expensive: Need to further speed-up DeepQMC</p>
     <p style="color: crimson;"> 🚧  Problem 2. Usually only get energies: WF can provide more properties</p>
   </div>
     
-    <p class="h4"> <b> 🧠 Our Efforts:</b></p>
+    <div class="text-content">
+    <div class="image-wrapper">
+      <img src="static/images/wandering.gif" alt="Formula">
+    </div>
+    <p></p> <p class="h4"> <b> 🧠 Our Efforts:</b></p>
 
     <p class="h5" style="color: #2e8b57;"><b> Solution 1: Orbformer--A pretrained wavefunctioin fundation model & its finetuning for downstream applications</b>: TBA </p>
-
+    <p></p> 
     <p class="h5" style="color: #2e8b57;"><b> Solution 2: Properties extraction for DeepQMC</b>:</p> Example: <a href="https://doi.org/10.1063/5.0236919"> Neural electron real-space density (NERD) </a>
+  </div>
 
 
     {{ components.section("AI x Quantum Computing for Quantum Chemistry") }}
