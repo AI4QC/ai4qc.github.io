@@ -80,20 +80,31 @@
     <p class="h6">Right: electron wandering during traininng for LiH, credit to Zeno Schatzle</p>
     <p class="h5" style="color: #2e8b57;"><b> Solution 1: Orbformer--A pretrained wavefunctioin fundation model & its finetuning for downstream applications</b>: TBA </p>
     <p></p> 
-    <p class="h5" style="color: #2e8b57;"><b> Solution 2: Properties extraction for DeepQMC</b>:</p> - <a href="https://doi.org/10.1063/5.0236919"> Neural electron real-space density (NERD)</a>: A neural electron real-space density model based on DeepQMC wavefunctions, enabling accurate, basis-set-free electron density predictions for evaluating density-based molecular properties.
+    <p class="h5" style="color: #2e8b57;"><b> Solution 2: Properties extraction for DeepQMC</b>:</p> 
+    <p>- <b><a href="https://doi.org/10.1063/5.0236919"> Neural electron real-space density (NERD)</a></b> : A neural electron real-space density model based on DeepQMC wavefunctions, enabling accurate, basis-set-free electron density predictions for evaluating density-based molecular properties.</p> 
   </div>
 
     {{ components.section("AI x Quantum Computing for Quantum Chemistry") }}
 
     <p class="h4" > <b> AI for Quantum Computing in NISQ Era </b> </p>
     <p class="h5"> We focus to use AI to to enhance the design and execution of quantum algorithms on Noisy Intermediate-Scale Quantum (NISQ) hardware. Specifically, our research explores how AI can be applied to:</p>
-      <p class="h5">🧩 Design more hardware-efficient ansatzes and quantum circuits;</p>
-      <p class="h5">🛡️ Enhance error resilience and correction strategies;</p>
-      <p class="h5">⚙️ Improve circuit parameter optimization in the presence of quantum noise.</p>
+    <p></p>
+      <p>🧩 Design more hardware-efficient ansatzes and quantum circuits;</p>
+      <p>🛡️ Enhance error resilience and correction strategies;</p>
+      <p>⚙️ Improve circuit parameter optimization in the presence of quantum noise.</p>
+    <p></p>
 
     <p class="h5" >Our goal is to build smarter, more robust quantum workflows that unlock the potential of near-term quantum devices for scientific discovery.</p>
-   <p class="h6"> - <b>  <a href="https://www.nature.com/articles/s42005-024-01577-x"> DARBO</a></b> (Double Adaptive-Region Bayesian Optimization): AI powered efficient optimizer for quantum circuits on real quantum hardware (over 1000x cost reduction).</p>
+   <p> - <b>  <a href="https://www.nature.com/articles/s42005-024-01577-x"> DARBO</a></b> (Double Adaptive-Region Bayesian Optimization): AI powered efficient optimizer for quantum circuits on real quantum hardware (over 1000x cost reduction).</p>
 
-    <p class="h4" > <b> Quantum computing for Quantum Chemistry via Quantum-classical Hybrid Approach </b> </p>
+    <p class="h4" > <b> Hardware Efficient Ansatz (HEA) for Quantum Chemistry via Quantum-classical Hybrid Approach </b> </p>
+
+    <p class="h5" >Our goal is to fully harness the power of quantum algorithms by “letting quantum algorithms handle quantum problems” in chemistry. We focus on hybrid quantum–classical methods to design more efficient ansatzes and computational protocols for solving electronic structure problems on near-term quantum devices.
+    <div class="image-wrapper">
+      <img src="static/images/CHEM.jpg" alt="">
+    </div>
+    <p> <b> - <a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.3c00886"> CHEM (Clifford Hamiltonian Engineering for Molecules)</a></b>: a hybrid quantum–classical method that applies Clifford transformations to molecular Hamiltonians, enabling more accurate and hardware-efficient quantum chemistry simulations on NISQ devices. </p>
+
+
 
 {% endblock %}
