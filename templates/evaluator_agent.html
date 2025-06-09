@@ -4,13 +4,44 @@
 
 {% block content %}
   <!-- Contact -->
+ <title>Insert image left</title>
+    <style>
+      .image-wrapper {
+      float: left;
+      width: 45%;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .text-content {
+      overflow: hidden; /* ensures container grows around floated content */
+    }
+  </style>
+</head>
+<body>
 
   Evaluator & Agent are highly collaborative modules that  Collaboration with experiment teams
     {{ components.section("Evaluator : AI for Experimental Design") }}
 
-  Reinforcement Learning or Bayesian Optimization 
+<div class="text-content">
+    <div class="image-wrapper">
+      <img src="static/images/odbo.jpg" alt="ODBO figure">
+    </div>
+    <p>The goal of this direction is to transform the experimental design by <b> replacing trial-and-error with few-shot minimal data adaptive optimization</b> with approaches like <b> Bayesian optimization (BO)</b>, <b> active learning</b>, and <b> reinforcement learning</b> to efficient exploration of <b>complex and high-dimensional experimental spaces</b>. In our research, we build our models with <b>uncertainty-aware algorithm, outlier managements, low-dimensional representations, and domain-specific priors</b> to ensure practical performance in noisy and constrained real-world chemistry experimental settings. By forming <b> feedback loops</b>, we hope to help the experimentalists to provide a general tool to acheive closed-loop discovery in chemistry, biology, and materials science.</p>
+
+
+    <p> <b> - <a href="https://arxiv.org/abs/2205.09548"> ODBO (Outlier-detected Bayesian Optimization)</a></b>: a ML protein directed evolution protocol that integrates low-dimensional and function-value-based protein encoding, search space prescreening with BO & outlier detection surrogate modeling to efficiently navigate noisy large sequence spaces and recommend high-fitness variants with minimal experimental cost.</p>
+
 
     {{ components.section("Scientific LLM Agent: High Quality Benchmark Metrics & Datasets & Problem-driven Fine-tuning") }}
+
+    TBA
 
 
 {% endblock %}
