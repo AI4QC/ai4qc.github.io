@@ -10,5 +10,39 @@ committee:
     ws: https://sherrylixuecheng.github.io/
     git: sherrylixuecheng
 
-  - role: TBA
-    name: Can be you
+  - role: Postdoctoral Fellow
+    name: Zhilong Song
+    phd: PhD in Physics, Southeast University
+    email: zhilong@seu.edu.cn
+    ws: https://szl666.github.io/
+    git: szl666 
+
+  - role: Graduate Student
+
+  - role: Research Assistant
+    name: Xinle Pang
+    phd: MSc. in Computer Science, University of Chinese Academy of Sciences
+    im: static/images/xinle_pang.jpg
+    email: pxy9623@163.com
+    git: pxy963
+
+  - role: Research Assistant
+    name: Yi Zhang
+    phd: M.Eng. in Biological & Pharmaceutical Eng., South China University of Technology 
+    im: static/images/yi_zhang.jpg
+    cv: https://github.com/ai4drug
+    email:  yizhang.mic@gmail.com
+    git: ai4drug
+
+  - role: Undergraduate Research Assistant
+    name: Xinyi Wu (Cindy)
+    undergrad: 3rd year, BS in Computer Sciences, University of Wisconsin-Madison 
+
+  - role: Undergraduate Research Assistant
+    name: Guanming Fang (Gavin)
+    undergrad: 2nd year, BS in Chemistry, HKUST
+    im: static/images/guanming_fang.jpg
+    cv: https://fgm0020.github.io/
+    email: gfangab@connect.ust.hk
+    ws: https://fgm0020.github.io/
+    git: fgm0020
