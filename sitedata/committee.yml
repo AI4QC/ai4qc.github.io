@@ -13,7 +13,9 @@ committee:
   - role: Postdoctoral Fellow
     name: Zhilong Song
     phd: PhD in Physics, Southeast University
-    email: zhilong@seu.edu.cn
+    cv: https://szl666.github.io/
+    email: zhilong@seo.edu.cn
+    im: static/images/zhilong_song.jpg
     ws: https://szl666.github.io/
     git: szl666 
 
