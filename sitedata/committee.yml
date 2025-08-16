@@ -21,14 +21,14 @@ committee:
 
   - role: Graduate Student
 
-  - role: Research Assistant
+  - role: Research Assistant (w/ Shanghai AI lab, Dr. Ma) 
     name: Xinle Pang
     phd: MSc. in Computer Science, University of Chinese Academy of Sciences
     im: static/images/xinle_pang.jpg
     email: pxy9623@163.com
     git: pxy963
 
-  - role: Research Assistant
+  - role: Research Assistant (w/ Guangzhou lab, Dr. Yang)
     name: Yi Zhang
     phd: M.Eng. in Biological & Pharmaceutical Eng., South China University of Technology 
     im: static/images/yi_zhang.jpg
@@ -36,9 +36,22 @@ committee:
     email:  yizhang.mic@gmail.com
     git: ai4drug
 
+  - role: Joint Research Assistant (w/ NWPU, Prof. Zheng)
+    name: Feiran Sun
+    phd: M.Sci. in Polymer Chemistry and Physics 
+    im: static/images/feiran_sun.jpg
+    cv: 
+    email: sunfeiran@mail.nwpu.edu.cn
+    git: 
+
   - role: Undergraduate Research Assistant
     name: Xinyi Wu (Cindy)
     undergrad: 3rd year, BS in Computer Sciences, University of Wisconsin-Madison 
+    im: static/images/Xinyi.jpg
+    cv: https://cindy901717.github.io/
+    email: xwu573@wisc.edu
+    ws: https://cindy901717.github.io/
+    git: cindy901717
 
   - role: Undergraduate Research Assistant
     name: Guanming Fang (Gavin)
