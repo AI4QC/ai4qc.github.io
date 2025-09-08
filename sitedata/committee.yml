@@ -19,7 +19,14 @@ committee:
     ws: https://szl666.github.io/
     git: szl666 
 
-  - role: Graduate Student
+  - role: Research Student
+    name: Tianyao Tan
+    phd: Master student in Physics, HKUST 
+    cv: https://peninsula824.github.io/
+    email: ttanag@connect.ust.hk
+    im: static/images/tianyao_tan.jpg 
+    ws: https://peninsula824.github.io/
+    git: peninsula824
 
   - role: Research Assistant (w/ Shanghai AI lab, Dr. Ma) 
     name: Xinle Pang
