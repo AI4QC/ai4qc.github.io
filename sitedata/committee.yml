@@ -35,14 +35,6 @@ committee:
     email: pxy9623@163.com
     git: pxy963
 
-  - role: Research Assistant (w/ Guangzhou lab, Dr. Yang)
-    name: Yi Zhang
-    phd: M.Eng. in Biological & Pharmaceutical Eng., South China University of Technology 
-    im: static/images/yi_zhang.jpg
-    cv: https://github.com/ai4drug
-    email:  yizhang.mic@gmail.com
-    git: ai4drug
-
   - role: Joint Research Assistant (w/ NWPU, Prof. Zheng)
     name: Feiran Sun
     phd: M.Sci. in Polymer Chemistry and Physics 
