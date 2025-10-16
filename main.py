@@ -396,6 +396,13 @@ def prehkust():
     return render_template("prehkust.html", **data)
 
 
+@app.route("/hkust.html")
+def hkust():
+    data = _data()
+    data["HKUST"] = open("HKUST.md").read()
+    return render_template("hkust.html", **data)
+
+
 # FRONT END SERVING
 
 
