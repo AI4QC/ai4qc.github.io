@@ -364,6 +364,10 @@ def emulator():
     data = _data()
     return render_template("emulator.html", **data)
 
+@app.route("/sampler.html")
+def sampler():
+    data = _data()
+    return render_template("sampler.html", **data)
 
 @app.route("/predictor.html")
 def predictor():
