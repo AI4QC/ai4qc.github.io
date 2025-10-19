@@ -388,6 +388,10 @@ def news():
     data = _data()
     return render_template("news.html", **data)
 
+@app.route("/mini_tests.html")
+def mini_tests():
+    data = _data()
+    return render_template("mini_tests.html", **data)
 
 @app.route("/prehkust.html")
 def prehkust():
