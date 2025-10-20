@@ -1,5 +1,5 @@
 name: AI4QC Lab
-tagline: Welcome to AI4Chemistry Lab @ HKUST
+tagline: Welcome to AI for Physical Sciences Lab @ HKUST
 #date: October 7-10, 2025
 #citation_date: May 2025
 #proceedings_title: Proceedings of the Second COLM Conference
@@ -11,10 +11,10 @@ logo:
 # uncomment the following line to show the site title next to the logo image
 # site_title: MiniConf
 page_title:
-  prefix: "AI4Chemistry Lab"
+  prefix: "AI4PhysSci Lab"
   separator: ": "
 background_image: static/images/hkust.jpg
-organization:  AI4Chemistry Lab, The Hong Kong University of Science and Technology. 
+organization:  AI4PhysSci Lab, The Hong Kong University of Science and Technology. 
 
 # Configuration for auth
 #Test user
