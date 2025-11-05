@@ -395,6 +395,12 @@ def mini_tests():
     return render_template("mini_tests.html", **data)
 
 
+@app.route("/FYP.html")
+def FYP():
+    data = _data()
+    return render_template("FYP.html", **data)
+
+
 @app.route("/prehkust.html")
 def prehkust():
     data = _data()
