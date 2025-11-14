@@ -28,6 +28,20 @@ committee:
     ws: https://peninsula824.github.io/
     git: peninsula824
 
+  - role: Research Assistant
+    name: Wenwei Cai
+    phd: MEng. in Materials Physics and Chemistry, Peking University
+    email: 2301212698@stu.pku.edu.cn 
+    im: static/images/wenwei_cai.jpg 
+    git: cww1117
+
+  - role: Research Assistant
+    name: Masoud Mozafari
+    phd: MSc. in Chemistry, Sharif University Of Technology
+    email: masoudmozafarivanani@gmail.com
+    im: static/images/masoud_mozafari.jpg 
+    git: masoudmv
+
   - role: Joint Research Assistant (w/ Sichuan University, Prof. Wu) 
     name: Haoxiang Yin
     phd: MSc. in Chemistry, Sichuan University
