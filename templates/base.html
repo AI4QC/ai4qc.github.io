@@ -69,13 +69,18 @@
 {% block header %}
 {% set navigation_bar = [
 ('index.html', 'Home', []),
-('#', 'Research', [('overview.html', 'Overview'),('simulator.html', 'Simulator'), ('emulator.html', 'Emulator'), ('sampler.html', 'Sampler'),  ('predictor.html', 'Predictor'), ('evaluator_agent.html', 'Evaluator & Agent'),]),
+('#', 'Research', [
+  ('overview.html', 'Overview'),
+  ('simulator.html', 'Simulator'),
+  ('emulator.html', 'Emulator'),
+  ('sampler.html', 'Sampler'),
+  ('predictor.html', 'Predictor'),
+  ('evaluator_agent.html', 'Evaluator & Agent'),
+]),
 ('members.html', 'Members', []),
-('#', 'Publications', [('prehkust.html', 'pre-HKUST'),('hkust.html', 'HKUST'),]),
-('#', 'Courses', [('tba.html', 'TBA'),]),
+('#', 'Publications', [('prehkust.html', 'Pre-HKUST'),('hkust.html', 'HKUST')]),
 ('news.html', 'News', []),
-('#', 'Openings', [('contact.html', 'Openings & criteria'), ('mini_tests.html', 'Mini-Tests'), ('FYP.html', 'HKUST Chemistry FYP'),]),
-('#', 'Tools', [('transorb.html', 'Orbital-based Learning'),('bo.html', 'DARBO & ODBO')]),
+('#', 'Openings', [('contact.html', 'Openings & criteria'), ('mini_tests.html', 'Mini-Tests'), ('FYP.html', 'HKUST Chemistry FYP')]),
 ('https://awiki-ai4qcpages.work/', 'InternalWiki', []),
 ] -%}
 
