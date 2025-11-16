@@ -28,12 +28,19 @@ committee:
     ws: https://peninsula824.github.io/
     git: peninsula824
 
-  - role: Research Assistant
+  - role: Incoming PhD Student (co-advised w/ Prof. Ding Pan)
+    name: Yuyang Lou
+    phd: BSc. in Physics, USTC (Starting Fall 2026, Physics, HKUST)
+    email: yuyanglune@gmail.com
+    im: static/images/yuyang_lou.jpg 
+    git: VMoonLightV
+
+  - role: Incoming PhD Student
     name: Wenwei Cai
-    phd: MEng. in Materials Physics and Chemistry, Peking University
+    phd: MEng. in Materials Physics and Chemistry, Peking University (Starting Fall 2026, Chemistry, HKUST)
     email: 2301212698@stu.pku.edu.cn 
     im: static/images/wenwei_cai.jpg 
-    git: cww1117
+    git: caiww1117
 
   - role: Research Assistant
     name: Masoud Mozafari
