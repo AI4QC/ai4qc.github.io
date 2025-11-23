@@ -14,10 +14,19 @@ committee:
     name: Zhilong Song
     phd: PhD in Physics, Southeast University
     cv: https://www.zlsong.com
-    email: zhilong@seo.edu.cn
+    email: zhilong@seu.edu.cn
     im: static/images/zhilong_song.jpg
     ws: https://www.zlsong.com
     git: szl666 
+
+  - role: Postdoctoral Fellow
+    name: Sichao Fu
+    phd: PhD in Information and Communication Engineering, Huazhong University of Science and Technology
+    cv: https://www.scholat.com/fusichao
+    email: fusichao_hust@163.com
+    im: static/images/sichao_fu.jpg
+    ws: https://www.scholat.com/fusichao
+    git: https://github.com/SichaoFu
 
   - role: Research Student
     name: Tianyao Tan
