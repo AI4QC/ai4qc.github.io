@@ -39,21 +39,21 @@ committee:
 
   - role: Incoming PhD Student (co-advised w/ Prof. Ding Pan)
     name: Yuyang Lou
-    phd: BSc. in Physics, USTC (Starting Fall 2026, Physics, HKUST)
+    phd: BSc. in Physics, USTC (2026Fall, Physics, HKUST)
     email: yuyanglune@gmail.com
     im: static/images/yuyang_lou.jpg 
     git: VMoonLightV
 
   - role: Incoming PhD Student
     name: Wenwei Cai
-    phd: MEng. in Materials Physics and Chemistry, Peking University (Starting Fall 2026, Chemistry, HKUST)
+    phd: MEng. in Materials Physics and Chemistry, Peking University (2026Fall, Chemistry(SC), HKUST)
     email: 2301212698@stu.pku.edu.cn 
     im: static/images/wenwei_cai.jpg 
     git: caiww1117
 
-  - role: Research Assistant
+  - role: Incoming PhD Student
     name: Masoud Mozafari
-    phd: BSc. in Chemistry, Sharif University Of Technology
+    phd: BSc. in Applied Chemistry, Sharif University Of Technology (2026Fall, Chemistry(SC), HKUST)
     email: masoudmozafarivanani@gmail.com
     im: static/images/masoud_mozafari.jpg 
     git: masoudmv
@@ -72,14 +72,6 @@ committee:
     email: pxy9623@163.com
     git: pxy963
 
-  - role: Joint Research Assistant (w/ NWPU, Prof. Zheng)
-    name: Feiran Sun
-    phd: M.Sci. in Polymer Chemistry and Physics 
-    im: static/images/feiran_sun.jpg
-    cv: 
-    email: sunfeiran@mail.nwpu.edu.cn
-    git: 
-
   - role: Undergraduate Research Assistant
     name: Xinyi Wu (Cindy)
     undergrad: 3rd year, BS in Computer Sciences, University of Wisconsin-Madison 
@@ -88,12 +80,3 @@ committee:
     email: xwu573@wisc.edu
     ws: https://cindy901717.github.io/
     git: cindy901717
-
-  - role: Undergraduate Research Assistant
-    name: Guanming Fang (Gavin)
-    undergrad: 2nd year, BS in Chemistry, HKUST
-    im: static/images/guanming_fang.jpg
-    cv: https://fgm0020.github.io/
-    email: gfangab@connect.ust.hk
-    ws: https://fgm0020.github.io/
-    git: fgm0020
