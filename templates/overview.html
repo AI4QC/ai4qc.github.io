@@ -3,78 +3,142 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <!-- Contact -->
-    {{ components.section("Overview") }}
-    <h5>
-    <p>Our lab is an AI for Science research group centered at <b>AI x quantum x chemistry</b>, especially <b>wavefunction learning </b>, <b> generative AI</b> and LLM for sciences. We focus on building practical, reliable, and user-friendly tools using AI, quantum computing, and physics-driven approaches. Our goal is to create a general and efficient framework that bridges data-driven models with fundamental electronic structure theories, providing accurate and scalable solutions for chemical problems. We actively work on <b>physics-driven multi-scale modeling</b> strategies via highly accurate <b>simulators</b>, <b>emulators</b>, <b>predictors</b> and <b>evaluators/agents</b> to achieve collaborative efforts of AI, quantum computing, chemistry and experimentalists. </p>
-    </h5>
-    <div class="h6" style="line-height: 2;">
-
-    <h4>
-        🔬✨ Research Interest Summary
-    </h4>
-    <div class="h5" style="line-height: 1.5;">
-
-    <title>Insert image</title>
-    <style>
+  {{ components.section("Overview") }}
+  <style>
+    .overview-section {
+      margin-bottom: 2rem;
+    }
+    .overview-heading {
+      margin-bottom: 1rem;
+    }
+    .overview-text {
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+    .overview-highlight {
+      color: #2e8b57;
+      font-weight: 600;
+    }
     .image-container {
-      text-align: center; /* center the image within the container */
+      text-align: center;
+      margin: 1.5rem 0;
     }
-
     .image-container img {
-      width: 70%;       /* shrink image to 50% of the container's width */
-      height: auto;     /* maintain aspect ratio */
-      display: block;   /* so margin: auto works if needed */
-      margin: 0 auto;   /* center the image horizontally */
+      width: 70%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
-    </style>
-    </head>
-    <body>
+    .overview-image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .overview-image-row .image-item {
+      flex: 1 1 320px;
+      max-width: 420px;
+      text-align: center;
+    }
+    .overview-image-row .image-item.large-figure {
+      flex: 4 1 620px;
+      max-width: 820px;
+    }
+    .overview-image-row .image-item.align-bottom {
+      align-self: flex-end;
+    }
+    .overview-image-row .image-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .overview-image-row .image-caption {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.4;
+    }
+  </style>
 
-      <div class="image-container">
-    <img src="static/images/overview.jpeg" alt="Overview of our interests">
+  <div class="overview-section overview-text">
+    <p>We are an interdisciplinary <b>AI for Science lab</b> devoted to building <b>Simulators</b>, <b>Emulators</b>, <b>Predictors</b>, and <b>Evaluators</b> that power multiscale modeling workflows. Rooted in <b>AI × quantum × theoretical sciences</b>, with chemistry and materials as core exemplars, our interests span machine learning, quantum computing, molecular simulation, generative molecular & materials design, property prediction, and experiment design. Our mission is to deliver <b>useful, not just fancy</b> tools that fuse physics-based principles with data-driven models to accelerate scientific discovery.</p>
   </div>
 
-    {{ components.section("Focus on Challenges in AI4S") }}
-
-
-  <div class="image-container">
-    <img src="static/images/challenge.jpeg" alt="Challenge of AI4S">
+  <div class="overview-section">
+    <h4 class="overview-heading">🔬✨ Research Interest Summary</h4>
+    <div class="overview-text">
+      <p><b>Our target problem scale:</b> We operate across the full hierarchy of scientific problems—from electron-level wavefunctions to material simulations, so that models optimized at one scale immediately inform decision-making at neighboring scales. This multiscale view is inspired by the <a href="https://en.wikipedia.org/wiki/Church%E2%80%93Turing%E2%80%93Deutsch_principle">Church–Turing–Deutsch principle</a>, which treats the universe as ultimately programmable and keeps us honest about what can (and cannot) be simulated with physics-aware computation.</p>
+      <p>We treat the Church–Turing–Deutsch framing as a pragmatic guardrail: build what current physics allows, and probe new modeling frontiers when emerging experiments or algorithms hint at more powerful compute primitives.</p>
+    </div>
+    <div class="image-container">
+      <img src="static/images/scale.jpg" alt="AI4QC target problem scale across multiple physics regimes">
+    </div>
   </div>
 
-
-    <h4>
-        ⚙️🔗 Our Approach: Multiscale + Physics driven modeling in AI4Chemistry
-    </h4>
-    <div class="h6" style="line-height: 1.5;">
-    <p class="h5" style="color: #2e8b57" ><b> 🧩 Our research pipeline follows a modular, LEGO-like design philosophy:</b> Each module functions as an interchangeable building block🧱, allowing us to assemble tailored workflows for a wide range of tasks. </p>
-
-    <p><b>Goal: Toward a fast, accurate and general foundation model for both ground & excite state chemistry </b></p>
-  <div class="image-container">
-    <img src="static/images/approach.jpeg" alt="approaches">
+  {{ components.section("Our Philosophy & Perspective") }}
+  <div class="overview-section">
+    <div class="overview-text">
+      <p><b>Our philosophy:</b> Build general, practical, and scalable AI4Science tools that tightly link simulators, emulators, predictors, and evaluators/agents. Every module is designed to be modular yet physics-grounded, enabling rapid iteration between computation, reasoning models, and experimental feedback.</p>
+      <p>We explicitly engineer the <b>Structure ↔ Wavefunction ↔ Property</b> trinity: For example, structural inputs feed ab initio simulators like Orbformer/Deep QMC; wavefunctions connect to properties via physics-preserving extractors (NERD) or regression upgrades (MOB-ML); properties feed back to structures through generative chemistry or LLM pipelines. In principle every edge is bidirectional, giving us a closed loop among simulators, predictors, and agents.</p>
+      <div class="overview-text" style="margin-left: 1.5rem;">
+        <p>• <b>Structure → Wavefunction:</b> Orbformer and Deep QMC learn orbital-resolved wavefunctions.</p>
+        <p>• <b>Wavefunction → Property:</b> NERD extracts high-accuracy properties; MOB-ML lifts low-level wavefunctions to high-level accuracy.</p>
+        <p>• <b>Structure → Property:</b> End-to-end predictors/LLM-style architectures return instant predictions.</p>
+        <p>• <b>Property → Structure:</b> Generative models or scientific agents reverse the flow to suggest new structures.</p>
+      </div>
+      <p>We treat physical processes, computational abstractions, and generative reasoning (up to AGI agents) as different faces of the same system: learn the physics, encode it as computation, then deploy it in generators/agents that can propose experiments, materials, or design strategies.</p>
+    </div>
+    <div class="overview-image-row">
+      <div class="image-item align-bottom">
+        <img src="static/images/computable.jpg" alt="Computable universe concept art">
+        <p class="image-caption">Physics-as-computation mindset: Physics Process ~= Computation Process ~= Generative AI, we aim to encode physical laws as simulations and AI models.</p>
+      </div>
+      <div class="image-item large-figure">
+        <img src="static/images/triangle_science.jpg" alt="AI4QC philosophy linking AI, theory, and experiment">
+        <p class="image-caption">Structure ⇄ Wavefunction ⇄ Property triangle: simulators, predictors, and agents share one backbone so physical process ≈ computation ≈ generative reasoning (up to AGI-style controllers).</p>
+      </div>
+    </div>
   </div>
 
-  <p><b>1️⃣ <a href="simulator.html">Simulator</a> 🧪</b>: Generates a small but extremely high-quality dataset of wavefunctions using Deep QMC, AI boost quantum computing and other advanced quantum simulation methods. 
-  <p><b>2️⃣ <a href="emulator.html">Emulator </a> ⚙️</b>: Uses orbital-representation-based graph neural networks/transformers to learn the Simulator’s outputs and expand data volume efficiently.</p>
-  <p><b>3️⃣ <a href="sampler.html">Sampler </a> 🔍</b>: Chemical space exploration and generative AI for the most "informative" or "rational" candidates.</p>
-  <p><b>4️⃣ <a href="predictor.html">Predictor </a> 🔮</b>: Predict molecular properties directly from structures (molecular graph, SMILES, etc), enabling fast, low-cost end-to-end applications. </p>
-  <p><b>5️⃣ <a href="evaluator_agent.html"> Evaluator 📝 & Agent 🤖</a></b>: Fine-tune large scientific language models as AI agent + Bayesian optimization to integrate literature data, and guide real-world experiments. </p>
+  <div class="overview-section">
+    <h4 class="overview-heading">⚙️🔗 Our Approach: Multiscale + Physics Driven Modeling in AI4Science</h4>
+    <div class="overview-text">
+      <p class="overview-highlight">🧩 Our research pipeline follows a modular, LEGO-like design philosophy: Each module functions as an interchangeable building block, allowing us to assemble tailored workflows for a wide range of tasks.</p>
+      <p><b>Goal:</b> Toward a fast, accurate, and general foundation model for both ground & excited-state problems across chemistry and the broader physical sciences.</p>
+    </div>
+    <div class="image-container">
+      <img src="static/images/approach.jpeg" alt="AI4QC modular research approach">
+    </div>
+    <div class="overview-text">
+      <p><b>1️⃣ <a href="simulator.html">Simulator</a> 🧪</b>: Generates a small but extremely high-quality dataset of wavefunctions using Deep QMC, AI-boosted quantum computing, and other advanced quantum simulation methods.</p>
+      <p><b>2️⃣ <a href="emulator.html">Emulator</a> ⚙️</b>: Uses orbital-representation-based graph neural networks/transformers to learn the simulator’s outputs and expand data volume efficiently.</p>
+      <p><b>3️⃣ <a href="sampler.html">Sampler</a> 🔍</b>: Explores chemical space with generative AI to identify the most informative or rational candidates.</p>
+      <p><b>4️⃣ <a href="predictor.html">Predictor</a> 🔮</b>: Predicts molecular properties directly from structures (molecular graph, SMILES, etc.), enabling fast, low-cost end-to-end applications.</p>
+      <p><b>5️⃣ <a href="evaluator_agent.html">Evaluator 📝 & Agent 🤖</a></b>: Fine-tunes large scientific language models as AI agents plus Bayesian optimization to integrate literature data and guide real-world experiments.</p>
+    </div>
+  </div>
 
-    {{ components.section("Diverse Directions") }}
+  {{ components.section("Diverse Directions") }}
+  <div class="overview-section">
+    <h4 class="overview-heading">🚀🌟 Current Active Projects</h4>
+    <div class="overview-text">
+      <p><b>1️⃣ AI for Quantum Chemistry</b></p>
+      <p>• Orbital-based machine learning for highly accurate ground and excited state wavefunction theory emulation (Emulator): Selected papers <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.8b00636">1</a> <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.2c00396">2</a></p>
+      <p>• Ab initio wavefunction learning via Deep Quantum Monte Carlo (Simulator): Selected papers <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.8b00636">1</a></p>
 
-    <h4>
-        🚀🌟 Current Active Projects: 
-    </h4>
-    <div class="h6" style="line-height: 1.5;">
+      <p><b>2️⃣ AI × Quantum Computing × Quantum Chemistry</b></p>
+      <p>• Quantum computing for quantum chemistry (Simulator): Selected papers <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.3c00886">1</a> <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.3c00319">2</a></p>
+      <p>• Machine Learning for variational quantum algorithms (Simulator): Selected papers <a href="https://www.nature.com/articles/s42005-024-01577-x">1</a></p>
 
-  <p><b>1️⃣ AI for Quantum Chemistry</b></p>
-   <p>• Orbital-based machine learning for highly accurate ground and excited state wavefunction theory emulation (Emulator): Selected papers <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.8b00636">1</a>  <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.2c00396">2</a> </p> 
-   <p>• Ab initio wavefunction learning via Deep Quantum Monte Carlo (Simulator): Selected papers <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.8b00636">1</a>  </p> 
-  <p><b>2️⃣ AI x Quantum Computing x Quantum Chemistry</b></p>
-   <p>• Quantum computing for quantum chemistry (Simulator): Selected papers <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.3c00886">1</a> <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.3c00319">2</a> </p>
-   <p>• Machine Learning for variational quantum algorithms (Simulator): Selected papers <a href="https://www.nature.com/articles/s42005-024-01577-x">1</a>  </p>
-  <p><b>3️⃣ Machine learning potential energy surface (MLPES) & force field (MLFF)  (Predictor, Not a priority now): </b>  Selected papers <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.4c08826">1</a>  <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.2c02243">2</a> </p> 
-  <p><b>4️⃣ AI for Experiment Design</b></p>
-   <p>• Bayesian optimization for experimental design (Evaluator): Selected papers <a href="https://arxiv.org/abs/2205.09548">1</a>  </p>
-  <p><b>5️⃣ Benchmark of LLM & Scientific Dataset Construction (Agent)</b>: Selected papers <a href="https://arxiv.org/abs/2311.07361">1</a>  </p>
+      <p><b>3️⃣ Machine Learning PES & Force Field (MLFF) (Predictor, not a priority now)</b></p>
+      <p>Selected papers <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.4c08826">1</a> <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.2c02243">2</a></p>
+
+      <p><b>4️⃣ AI for Experiment Design</b></p>
+      <p>• Bayesian optimization for experimental design (Evaluator): Selected papers <a href="https://arxiv.org/abs/2205.09548">1</a></p>
+
+      <p><b>5️⃣ Benchmark of LLM & Scientific Dataset Construction (Agent)</b></p>
+      <p>Selected papers <a href="https://arxiv.org/abs/2311.07361">1</a></p>
+    </div>
+  </div>
 {% endblock %}
