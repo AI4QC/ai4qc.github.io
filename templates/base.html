@@ -139,14 +139,16 @@
 <!-- User Overrides -->
 {% block top %} {% endblock %}
 
-<div class="container">
-    <!-- Tabs -->
-    <div class="tabs">
-        {% block tabs %} {% endblock %}
-    </div>
-    <!-- Content -->
-    <div class="content">
-        {% block content %} {% endblock %}
+<div class="page-wrapper">
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+            {% block tabs %} {% endblock %}
+        </div>
+        <!-- Content -->
+        <div class="content">
+            {% block content %} {% endblock %}
+        </div>
     </div>
 </div>
 {% endblock %}
