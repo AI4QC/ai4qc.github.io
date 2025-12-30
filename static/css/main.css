@@ -235,12 +235,14 @@ label:text-muted,
 .pp-card-header {
   border: none;
   font-family: "Exo";
-  height: 340px;
+  min-height: 420px;
+  height: auto;
   padding: 18px 20px;
 }
 
 .pp-mode-mini .pp-card-header {
-  height: 175px;
+  min-height: 220px;
+  height: auto;
   border: none;
 }
 
