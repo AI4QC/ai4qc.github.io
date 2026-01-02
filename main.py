@@ -128,9 +128,9 @@ def mini_tests():
     return render_template("mini_tests.html", **_data())
 
 
-@app.route("/FYP.html")
-def fyp():
-    return render_template("FYP.html", **_data())
+@app.route("/hkust_credits.html")
+def hkust_credits():
+    return render_template("hkust_credits.html", **_data())
 
 
 def _render_markdown_page(template_name, key, file_path):
