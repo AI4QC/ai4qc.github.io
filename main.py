@@ -113,9 +113,9 @@ def members():
     return render_template("members.html", **data)
 
 
-@app.route("/contact.html")
-def contact():
-    return render_template("contact.html", **_data())
+@app.route("/openings.html")
+def openings():
+    return render_template("openings.html", **_data())
 
 
 @app.route("/news.html")

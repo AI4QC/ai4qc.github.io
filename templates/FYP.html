@@ -1,31 +1,47 @@
-{% set active_page = "HKUST Chemistry FYP" %}
-{% set page_title = "HKUST Chemistry FYP" %}
+{% set active_page = "HKUST UROP, FYP, & Master Research" %}
+{% set page_title = "HKUST UROP, FYP, & Master Research" %}
 {% extends "base.html" %}
 
 
 {% block content %}
 <!-- Contact -->
-  {{ components.section("HKUST Chemistry major Final Year Project (FYP)") }}
-  
-  <p>We welcome <b>Year 3 undergraduate students majoring in Chemistry at HKUST</b> to contact Sherry and consider joining our group for their </b>Final Year Project (FYP)</b> in </b>every November</b>. </p>
-  <p><b>List of research track topics in 2026 (applying for 2027 FYP, topics vary every year)</b></p>
+  {{ components.section("Overview & Sample Research Tracks") }}
+  <p>We welcome <b>HKUST students interested in UROP, Final Year Projects (FYP), or Master-level research</b> to contact Sherry and explore how AI for Physical Sciences fits into your academic journey. Chemistry majors typically reach out in November of Year 3 to align with FYP timelines, while UROP students and MSc candidates can inquire semester- or year-round depending on project availability.</p>
+  <p><b>List of open research topics (topics might be different every year)</b></p>
   <ul>
     <li>Wavefunction Learning with Transformer: Extending the current Orbformer architectures to learn a general foundation model (FM) for excited states of molecular systems.</li>
     <li>Orbital-based learning via Representation Learning and Graph Transformer: </li>
     <li>Generative Models for Material Design: Using generative AI (majorly diffusion model and flow matching) techniques to design novel materials with desired properties.</li>
-    <li>LLM for Material Agents: Finetuning a large language model (LLM) for material agent to assist specific material discoveries (catalytsts, batteries, and polymers).</li>
+    <li>Environmental Chemistry Agents: Building AI agents that streamline environmental monitoring, remediation planning, and data interpretation for sustainable chemistry.</li>
+    <li>LLM for Material Agents: Fine-tuning large language models to serve as specialized agents assisting material discoveries (catalysts, batteries, polymers).</li>
+    <li>LLM for Molecule Agents: Training molecular reasoning agents that interface with computation/automation pipelines for small-molecule design or reaction discovery.</li>
   </ul> 
-  <p><b>Q & A about FYP application:</b></p>
-  <p><b>Q1: When should I contact Sherry for FYP application?</b></p>
-  <p>A1: Usually in early November of Year 3. 
-  <p><b>Q2: How many students every year we take?</b></p>
-  <p>A2: To ensure the education quality, we usually consider 3-5 students every year. </p>
-  <p><b>Q3: What are the selection criteria?</b></p>
-  <p>A3: We most value three aspects: Python coding skills, GitHub repos and Chemistry insights. We do not set a minimum GPA requirement, and no prior research experience is required, but a strong passion for AI for Science is a must. </p>
-  <p><b>Q4: Can I continue to do a PhD with AI4PhysSci lab after FYP?</b></p>
-  <p>A4: Yes, we encourage our FYP students to continue their PhD studies with us. Strong FYP performance can significantly enhance your chances of being admitted to our PhD program. </p>
-  <p><b>Q5: Can I start eariler with you in Year 3 and continue FYP?</b></p>
-  <p>A5: Yes, if you are interested in starting earlier, you can consider joining us as a research intern in spring or summer of Year 3 before your FYP. This experience can provide valuable insights and preparation for your FYP project. </p>
-  <p><b>Q6: Any possibilities to take students outside HKUST Chemistry major?</b></p>
-  <p>A6: We primarily accept students from HKUST Chemistry program. If you are from a related field and have a strong interest in AI for Science, please feel free to reach out to discuss the possibilities of FYP. Please first check with your UG coordinator for the possibilites.</p>
+  <p><i>These topics are representative examples; we welcome proposals beyond this list as long as they align with AI4Science and physical chemistry research.</i></p>
+
+  {{ components.section("HKUST Chemistry major Final Year Project (FYP)") }}
+  <p><b>Eligibility:</b> We currently take <b>HKUST Chemistry majors only</b> for the FYP track. Please contact us every November of Year 3 to discuss project fit and preparation.</p>
+
+  {{ components.section("HKUST Undergraduate Research Opportunities Program (UROP)") }}
+  <p>We regularly host UROP projects on AI4Science, automation for quantum chemistry, and ML-for-materials topics. <b>These positions are open to HKUST undergraduates from all majors.</b> Reach out with your resume, coursework, and preferred timeline so we can identify a suitable project and mentor pairing. Applicants should highlight relevant coding or lab experiences to help us tailor mentorship.</p>
+
+  {{ components.section("Master Research (Taught MSc)") }}
+  <p>Prospective taught Master (MSc) students in <b>Chemistry, Physics, or Chemical and Biological Engineering</b> who are interested in research-for-credit or thesis-style projects can contact us with a brief statement of interests and coding background. We coordinate with the Chemistry Department to align deliverables with your program requirements and can co-design projects that dovetail with industrial internships or capstone milestones. (Note: MPhil applicants should refer to our PhD/openings information instead.)</p>
+
+  {{ components.section("Q & A") }}
+  <p><b>[FYP] Q1: When should I contact Sherry for FYP application?</b></p>
+  <p>A1: Usually in early November of Year 3.</p>
+  <p><b>[FYP & UROP] Q2: How many students every year do we take?</b></p>
+  <p>A2: To ensure education quality, we usually consider 3-5 FYP students every year. UROP spots open based on mentor bandwidth.</p>
+  <p><b>[FYP & UROP & MSc] Q3: What are the selection criteria?</b></p>
+  <p>A3: We value Python coding skills, GitHub repos, and chemistry insights. We do not set a minimum GPA requirement, and no prior research experience is required, but a strong passion for AI for Science is a must.</p>
+  <p><b>[FYP & UROP & MSc] Q4: Can I continue to do a PhD with AI4PhysSci lab after FYP or UROP?</b></p>
+  <p>A4: Yes, we encourage our undergraduate researchers to continue their PhD studies with us. Strong performance and initiative can significantly enhance your chances of being admitted to our PhD program.</p>
+  <p><b>[FYP & UROP] Q5: Can I start earlier with you in Year 3 and continue into FYP?</b></p>
+  <p>A5: Yes, if you are interested in starting earlier, consider joining us as a research intern or UROP student in spring or summer of Year 3 before your FYP. This experience provides valuable preparation.</p>
+  <p><b>[FYP & UROP] Q6: Can non-Chemistry undergraduates join?</b></p>
+  <p>A6: FYP remains limited to Chemistry majors, but UROP is open to undergraduates from all HKUST majors.</p>
+  <p><b>[MSc] Q7: How do taught Master (MSc) students work with the group?</b></p>
+  <p>A7: Taught Master students should contact us early in their program with project ideas and coding background so we can plan taking 3 (one semester) or 6 (2 semesters) research credits. Please contact your program coordinator for more information.</p>
+  <p><b>[MSc] Q8: Do you take MPhil students through this process?</b></p>
+  <p>A8: This page covers taught Master (MSc) projects only. Students interested in MPhil or other research postgraduate tracks should consult the AI4PhysSci openings page for PhD/MPhil guidance.</p>
 {% endblock %}
