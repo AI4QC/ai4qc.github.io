@@ -47,14 +47,26 @@
         object-fit: cover;
         border-radius: 50%;
     }
+    @keyframes avatarWave {
+        0% { transform: scale(1) rotate(0deg); }
+        25% { transform: scale(1.06) rotate(-4deg); }
+        50% { transform: scale(1.05) rotate(4deg); }
+        75% { transform: scale(1.03) rotate(-2deg); }
+        100% { transform: scale(1) rotate(0deg); }
+    }
+    .avatar-launcher button.avatar-animate img {
+        animation: avatarWave 0.85s ease;
+    }
     .avatar-launcher button:hover {
         transform: translateY(-3px);
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
     }
     .avatar-launcher span {
         font-size: 1.05rem;
-        color: #fff;
-        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        color: #1d2d50;
+        font-weight: 600;
+        text-shadow: none;
+        letter-spacing: 0.01em;
     }
     .avatar-modal {
         position: fixed;
@@ -159,6 +171,8 @@
     }
 
     button.addEventListener("click", function () {
+      button.classList.add("avatar-animate");
+      setTimeout(() => button.classList.remove("avatar-animate"), 900);
       modal.classList.add("open");
       modal.setAttribute("aria-hidden", "false");
       video.play();
@@ -171,6 +185,32 @@
       }
     });
   })();
+</script>
+
+<!-- Live2D widget (kanban musume) -->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+  L2Dwidget.init({
+    model: {
+      jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+      scale: 1
+    },
+    display: {
+      position: "right",
+      width: 170,
+      height: 300,
+      hOffset: 20,
+      vOffset: -10
+    },
+    mobile: {
+      show: true,
+      scale: 0.6
+    },
+    react: {
+      opacityDefault: 0.75,
+      opacityOnHover: 0.2
+    }
+  });
 </script>
 
 {% endblock %}
