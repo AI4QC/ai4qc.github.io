@@ -125,7 +125,7 @@
 </div>
 <div class="avatar-modal" id="avatarModal" aria-hidden="true">
     <div class="avatar-modal-content">
-        <button class="close-modal" id="closeAvatar" aria-label="Close video">×</button>
+        <button type="button" class="close-modal" id="closeAvatar" aria-label="Close video">×</button>
         <video id="avatarVideo" controls preload="none">
             <source src="static/images/welcome_video.mp4" type="video/mp4"/>
             Your browser does not support the video tag.
@@ -178,7 +178,10 @@
       video.play();
     });
 
-    closeBtn.addEventListener("click", closeModal);
+    closeBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      closeModal();
+    });
     modal.addEventListener("click", function (event) {
       if (event.target === modal) {
         closeModal();
