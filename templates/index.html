@@ -119,7 +119,7 @@
 
 <div class="avatar-launcher">
     <button id="avatarButton" aria-label="Play welcome video">
-        <img src="static/images/avatar.png" alt="Digital avatar thumbnail"/>
+        <img src="static/images/avatar_actions/avatar.png" alt="Digital avatar thumbnail"/>
     </button>
     <span>Meet our avatar</span>
 </div>
@@ -160,6 +160,36 @@
     const modal = document.getElementById("avatarModal");
     const closeBtn = document.getElementById("closeAvatar");
     const video = document.getElementById("avatarVideo");
+    const avatarImg = button.querySelector("img");
+    const avatarActionFrames = [
+      "你好.png",
+      "写代码.png",
+      "思考.png",
+      "有想法.png",
+      "比耶.png",
+      "谢谢.png",
+      "合作愉快.png",
+      "抓蝴蝶.png",
+      "摸摸头.png"
+    ].map(name => `static/images/avatar_actions/${name}`);
+    let actionTimer = null;
+
+
+    function triggerAvatarAction() {
+      avatarImg.src =
+        avatarActionFrames[Math.floor(Math.random() * avatarActionFrames.length)];
+    }
+
+    function scheduleNextAction(delayOverride) {
+      const delay =
+        typeof delayOverride === "number" ? delayOverride : 4000 + Math.random() * 3000;
+      actionTimer = setTimeout(() => {
+        triggerAvatarAction();
+        scheduleNextAction();
+      }, delay);
+    }
+
+    setTimeout(() => scheduleNextAction(), 10000);
 
     function closeModal() {
       modal.classList.remove("open");
@@ -171,8 +201,6 @@
     }
 
     button.addEventListener("click", function () {
-      button.classList.add("avatar-animate");
-      setTimeout(() => button.classList.remove("avatar-animate"), 900);
       modal.classList.add("open");
       modal.setAttribute("aria-hidden", "false");
       video.play();
