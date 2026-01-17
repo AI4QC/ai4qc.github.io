@@ -73,3 +73,21 @@ committee:
     email: xwu573@wisc.edu
     ws: https://cindy901717.github.io/
     git: cindy901717
+
+  - role: Undergraduate Research Assistant
+    name: Hiuyu Ting (Hiu)
+    undergrad: 3rd year, BSc in Chemistry (Minor in Computer Science), HKUST
+    im: static/images/hiuyu_ting.jpg
+    cv: na
+    email: hytingaa@connect.ust.hk
+    ws: na
+    git: TING-HiuYu
+
+  - role: Undergraduate Research Assistant
+    name: Zongmin Zhang (Nagato)
+    undergrad: 3rd year, BEng in Computer Science (Minor in Chemistry), HKUSTs
+    im: static/images/zongmin_zhang.jpg
+    cv: https://www.linkedin.com/in/zongmin-zhang/
+    email: zzhanghw@connect.ust.hk
+    ws: nagatobigseven.github.io
+    git: NagatoBigSeven
