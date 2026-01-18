@@ -58,6 +58,13 @@ committee:
     im: static/images/masoud_mozafari.jpg 
     git: masoudmv
 
+  - role: Research Assistant
+    name: Chengxin Hu (Albert)
+    phd: MSc. in Precision Health and Medicine, NUS
+    email: huchengxin38@gmail.com
+    im: static/images/chengxin_hu.jpg  
+    git: ChengxinHU
+
   - role: Joint Research Assistant (w/ Sichuan University, Prof. Wu) 
     name: Haoxiang Yin
     phd: MSc. in Chemistry, Sichuan University
