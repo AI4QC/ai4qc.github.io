@@ -4,7 +4,7 @@
 
 🧪[18] Sun, J.; **Cheng, L.**; Zhang, S.-X. Stabilizer ground state: Theory, algorithms and applications, *Quantum*, **2025**.[Link](https://doi.org/10.22331/q-2025-06-24-1782) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.22331/q-2025-06-24-1782"></span>
 
-🔮[17] Jacobson, G.<sup>\*</sup>; **Cheng, L.**<sup>\*</sup>; Sun, J; Bhethanabotla, V; McCoy, A. B., Machine Learning Approaches for Developing Potential Surfaces: Applications to OH-(H2O)n (n=1-3) Complexes. *J. Phys. Chem. A*, **2025**. [Link](https://pubs.acs.org/doi/abs/10.1021/acs.jpca.4c08826)n) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jpca.4c08826"></span>
+🔮[17] Jacobson, G.<sup>\*</sup>; **Cheng, L.**<sup>\*</sup>; Sun, J; Bhethanabotla, V; McCoy, A. B., Machine Learning Approaches for Developing Potential Surfaces: Applications to OH-(H2O)n (n=1-3) Complexes. *J. Phys. Chem. A*, **2025**. [Link](https://pubs.acs.org/doi/abs/10.1021/acs.jpca.4c08826) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jpca.4c08826"></span>
 
 🧪[16] **Cheng, L.**<sup>\*</sup>; Szabó, P.B.<sup>\*</sup>; Schätzle, Z.<sup>\*</sup>; Kooi, D.; Köhler, J.; Noé, F.; Gori-Giorgi, P.; Foster, A. Highly Accurate Real-space Electron Densities with Neural Networks, *J. Chem. Phys.*, **2025**.[Link](https://doi.org/10.1063/5.0236919) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1063/5.0236919"></span>
 
