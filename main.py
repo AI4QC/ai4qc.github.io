@@ -133,6 +133,11 @@ def hkust_credits():
     return render_template("hkust_credits.html", **_data())
 
 
+@app.route("/summer_research_2026.html")
+def summer_research_2026():
+    return render_template("summer_research_2026.html", **_data())
+
+
 def _render_markdown_page(template_name, key, file_path):
     data = _data()
     if os.path.exists(file_path):

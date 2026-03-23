@@ -1,0 +1,74 @@
+{% set active_page = "HKUST Chemistry Summer Research Program" %}
+{% set page_title = "HKUST Chemistry Summer Research Program" %}
+{% extends "base.html" %}
+
+
+{% block content %}
+<!-- Program Overview -->
+  {{ components.section("HKUST Chemistry Summer Research Program 2026") }}
+  
+  <div class="alert alert-warning" role="alert">
+    <strong>⚠️ Important Notice:</strong> It is <strong>extremely competitive</strong> to apply for our group. We receive many applications each year and only select a limited number of outstanding candidates who demonstrate exceptional academic performance, strong programming skills, and genuine passion for AI for Science research.
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <p>Join our 5-week Summer Research Program to collaborate with top faculty on real-world projects. Gain hands-on experience in experimental design, data analysis, and cutting-edge research techniques while contributing to ongoing studies. Advance your skills and accelerate your academic journey in a dynamic, mentor-driven environment.</p>
+      
+      <p><strong>📅 Program Dates:</strong> 6<sup>th</sup> July – 7<sup>th</sup> August, 2026</p>
+      <p><strong>💰 Stipend:</strong> HK$10,000 to cover expenses</p>
+      <p><strong>🏠 Accommodation:</strong> On-campus housing provided</p>
+    </div>
+  </div>
+
+  {{ components.section("Eligibility") }}
+  <ul>
+    <li>Open to <strong>Year 2-3 undergraduates</strong> in Chemistry or related fields</li>
+    <li>Seek host group approval by contacting our faculty</li>
+    <li>Strong academic record and programming skills preferred</li>
+  </ul>
+
+
+  {{ components.section("Application Information") }}
+  
+  <div class="alert alert-info" role="alert">
+    <strong>📌 Deadline:</strong> Apply by <strong>20 March 2026</strong>
+  </div>
+
+  <p><strong>To apply for our group specifically:</strong></p>
+  <ol>
+    <li>First, submit your application through the official HKUST Chemistry Department channel (see flyer QR code)</li>
+    <li>Additionally, send an email to Dr. Lixue Cheng with:
+      <ul>
+        <li>Your CV/resume</li>
+        <li>Academic transcripts</li>
+        <li>A brief statement of interest explaining why you want to join our group specifically</li>
+        <li>Links to your GitHub or any previous coding/research projects (highly recommended)</li>
+        <li>Evidence of your programming skills (Python, PyTorch, etc.)</li>
+      </ul>
+    </li>
+  </ol>
+
+  <p><strong>Selection criteria for our group:</strong></p>
+  <ul>
+    <li>Strong academic performance in relevant courses (CS, Math, Chemistry, Physics, Materials)</li>
+    <li>Programming experience (Python, GitHub, and PyTorch/JAX experiences are required)</li>
+    <li>Strong interest in AI for Science and physical chemistry</li>
+  </ul>
+
+  {{ components.section("Contact") }}
+  <p><strong>For program enquiries:</strong></p>
+  <p>Mr. Chun Ming CHOW<br>
+  Email: <a href="mailto:ccming@ust.hk">ccming@ust.hk</a></p>
+
+  <p><strong>To apply specifically to our group:</strong></p>
+  <p>Dr. Lixue Cheng (Sherry)<br>
+  Email: <a href="mailto:lixuecheng@ust.hk">lixuecheng@ust.hk</a><br>
+  Lab Website: <a href="https://ai4qc.hkust.edu.hk/" target="_blank">ai4qc.hkust.edu.hk</a></p>
+
+  <div class="mt-4">
+    <a href="https://chem.hkust.edu.hk/people" target="_blank" class="btn btn-primary">View Faculty Profiles</a>
+    <a href="openings.html" class="btn btn-outline-secondary ml-2">Back to Openings</a>
+  </div>
+
+{% endblock %}
