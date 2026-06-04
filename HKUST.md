@@ -1,3 +1,5 @@
+🤖[27] Song, Z., Zhang, Z., **Cheng, L.** Autonomous Heterogeneous Catalyst Discovery with a Self-Evolving Multi-Agent Digital Twin. arXiv:2606.05050. (2026). [Link](https://arxiv.org/abs/2606.05050) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2606.05050"></span>
+
 🧪[26] Xiao, Z., Ding, X., Lou, Y., **Cheng, L.**, Li, C. A Survey of Neural Network Variational Monte Carlo from a Computing Workload Characterization Perspective. arXiv:2603.18126. (2026). [Link](https://arxiv.org/abs/2603.18126) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2603.18126"></span>
 
 🤖[25] Li, W., Ren, J., **Cheng, L.**, Gong, C. Autonomous Quantum Simulation through Large Language Model Agents. arXiv:2601.10194. (2026). [Link](https://arxiv.org/abs/2601.10194) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2601.10194"></span>
