@@ -8,7 +8,7 @@
 
 🧪[16] **Cheng, L.**<sup>\*</sup>; Szabó, P.B.<sup>\*</sup>; Schätzle, Z.<sup>\*</sup>; Kooi, D.; Köhler, J.; Noé, F.; Gori-Giorgi, P.; Foster, A. Highly Accurate Real-space Electron Densities with Neural Networks, *J. Chem. Phys.*, **2025**.[Link](https://doi.org/10.1063/5.0236919) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1063/5.0236919"></span>
 
-🧪[15] **Cheng, L.**<sup>\*</sup>; Chen, Y.-Q.<sup>\*</sup>; Zhang, S.-X.; Zhang, S. Error-Mitigated Quantum Approximate Optimization via Learning-Based Adaptive Optimization. (\*co-first author) *Commun. Phys.*, **2024**.[Link](https://www.nature.com/articles/s42005-024-01577-x),  ["Top 25 downloaded papers of 2024" on Communications Physics](https://www.nature.com/collections/dbgdehfjec) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1038/s42005-024-01577-x"></span>
+🧪[15] **Cheng, L.**<sup>\*</sup>; Chen, Y.-Q.<sup>\*</sup>; Zhang, S.-X.; Zhang, S. Quantum Approximate Optimization via Learning-based Adaptive Optimization. (\*co-first author) *Commun. Phys.*, **2024**.[Link](https://www.nature.com/articles/s42005-024-01577-x),  ["Top 25 downloaded papers of 2024" on Communications Physics](https://www.nature.com/collections/dbgdehfjec) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1038/s42005-024-01577-x"></span>
 
 🧪[14] Sun, J.; **Cheng, L.**; Li, W. Towards Chemical Accuracy with Shallow Quantum Circuits: A Clifford-Based Hamiltonian Engineering Approach.  *J. Chem. Theory Comput.*, **2024**.[Link](https://pubs.acs.org/doi/10.1021/acs.jctc.3c00886) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jctc.3c00886"></span>
 
