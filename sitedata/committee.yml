@@ -37,13 +37,6 @@ committee:
     ws: https://peninsula824.github.io/
     git: peninsula824
 
-  - role: Incoming PhD Student (co-advised w/ Prof. Ding Pan)
-    name: Yuyang Lou
-    phd: BSc. in Physics, USTC (2026Fall, Physics, HKUST)
-    email: yuyanglune@gmail.com
-    im: static/images/yuyang_lou.jpg 
-    git: VMoonLightV
-
   - role: Incoming PhD Student
     name: Wenwei Cai
     phd: MEng. in Materials Physics and Chemistry, Peking University (2026Fall, Chemistry(SC), HKUST)
