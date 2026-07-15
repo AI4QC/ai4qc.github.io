@@ -1,3 +1,5 @@
+🔍[30] Song, Z., Zhou, Q., Ling, C., Li, Q., **Cheng, L.**, Wang, J. Physics-grounded generative design of inherently stable, novel and controllable crystal structures. arXiv:2507.19307. (2026). [Link](https://arxiv.org/abs/2507.19307) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2507.19307"></span>
+
 🤖[29] Zhang, Z., Lou, Y., Zhang, B., Chen, J., Kuroki, R., Nguyen, X.V., Fako, E., **Cheng, L.**, Schwaller, P. AdsMind: A Physics-Grounded Multi-Agent System for Self-Correcting Discovery of Adsorption Configurations on Heterogeneous Catalyst Surfaces. arXiv:2606.19152. (2026). [Link](https://arxiv.org/abs/2606.19152) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2606.19152"></span>
 
 🤖[28] Song, Z., Zhang, Z., **Cheng, L.** Autonomous Heterogeneous Catalyst Discovery with a Self-Evolving Multi-Agent Digital Twin. arXiv:2606.05050. (2026). [Link](https://arxiv.org/abs/2606.05050) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2606.05050"></span>
