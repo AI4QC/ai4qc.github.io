@@ -3,14 +3,34 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <!-- Contact -->
-    {{ components.section("Model analysis and chemical space exploration") }}
-  <p>The first set of results will be updated soon.</p>
-  
-    {{ components.section("Generative model and inverse design for Materials") }}
+
+  <p>The <b>Sampler</b> layer sits between the <a href="emulator.html">Emulator</a> and the <a href="predictor.html">Predictor</a> in our workflow. Where the Emulator learns fast surrogates of <a href="simulator.html">Simulator</a> data and the Predictor maps structures to properties, the Sampler is responsible for <b>exploring and generating</b> chemical and materials space: drawing novel, valid candidates and <b>inverse-designing</b> structures that satisfy target property profiles, while staying grounded in physical and chemical constraints.</p>
+
+  {{ components.section("Model analysis and chemical space exploration") }}
+
+  <p>Before and during generation, we need to understand <i>what our models have actually learned</i> and <i>where in chemical space we should be searching</i>. This direction focuses on analyzing the latent representations and behavior of our generative and emulator models, and on navigating chemical space in an informed, uncertainty-aware way.</p>
+  <p>Key questions we address include:</p>
+  <ul>
+    <li>🔎 Probing and interpreting the latent spaces of generative models to expose biases, gaps, and redundancy in the sampled distributions.</li>
+    <li>🗺️ Mapping and visualizing chemical and materials space to guide search toward under-explored yet physically meaningful regions.</li>
+    <li>📊 Quantifying the diversity, validity, and novelty of generated candidates, and diagnosing failure modes such as chemically invalid structures or mode collapse.</li>
+    <li>🎯 Uncertainty-aware exploration that couples sampler proposals with emulator and simulator feedback to balance exploitation and exploration.</li>
+  </ul>
+  <p>More analysis tools and case studies will be added as this direction matures.</p>
+
+  {{ components.section("Generative model and inverse design for Materials") }}
+
+  <p>Generative modeling lets us move from <i>screening what exists</i> to <i>designing what could exist</i>. We develop and apply physics-grounded generative approaches&mdash;spanning diffusion, flow-matching, and other sampling frameworks&mdash;to inversely design crystals, molecules, and materials with target stability, functionality, and synthesizability. Physical constraints and emulator or simulator signals are injected throughout the sampling process to keep generated candidates realistic and controllable.</p>
+  <p>Key questions we address include:</p>
+  <ul>
+    <li>🧊 Geometry- and symmetry-aware generation that respects crystal periodicity, composition, and space-group constraints.</li>
+    <li>⚖️ Controllable generation that steers candidates toward target property profiles (stability, functionality) via conditioning or guidance.</li>
+    <li>🔄 Closed-loop design that validates and refines generated candidates with emulator and simulator feedback.</li>
+    <li>🔍 Physics-grounded generative design of crystal structures that are inherently stable, novel, and controllable.</li>
+  </ul>
 
   <p class="h4"><b>🔍 Physics-grounded generative design of inherently stable, novel and controllable crystal structures</b></p>
   <p>Song, Z., Zhou, Q., Ling, C., Li, Q., <b>Cheng, L.</b>, Wang, J. (2026). <a href="https://arxiv.org/abs/2507.19307">arXiv:2507.19307</a></p>
-  <p>A physics-grounded generative framework for the inverse design of crystal structures, targeting the generation of candidates that are inherently stable, novel, and controllable. The approach combines generative sampling over crystal chemical space with physical constraints to guide the search toward synthesizable materials.</p>
+  <p>A physics-grounded generative framework for the inverse design of crystal structures, targeting the generation of candidates that are inherently stable, novel, and controllable. The approach combines generative sampling over crystal chemical space with physical constraints to guide the search toward stable and controllable materials.</p>
 
 {% endblock %}
