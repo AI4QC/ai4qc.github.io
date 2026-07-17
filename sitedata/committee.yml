@@ -28,6 +28,15 @@ committee:
     ws: https://www.scholat.com/fusichao
     git: https://github.com/SichaoFu
 
+  - role: Postdoctoral Fellow (Joint w/ University of Cambridge, co-supervised by Prof. Bartomeu Monserrat)
+    name: Yilei Wu
+    phd: PhD in Physics, Southeast University
+    cv: https://wuyileiiiii.github.io/
+    email: yw802@cam.ac.uk
+    im: static/images/yilei_wu.jpeg
+    ws: https://wuyileiiiii.github.io/
+    git: wuyileiiiii
+
   - role: Research Student
     name: Tianyao Tan
     phd: Master student in Physics, HKUST 
