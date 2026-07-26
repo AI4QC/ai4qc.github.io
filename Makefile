@@ -7,8 +7,8 @@ TEMP_DEPLOY_BRANCH = "temp-gh-pages"
 all: format-check
 
 format-python:
-	isort -rc $(PYTHON_FILES) --multi-line=3 --trailing-comma --force-grid-wrap=0 --use-parentheses --line-width=88
-	black -t py37 $(PYTHON_FILES)
+	isort $(PYTHON_FILES)
+	black $(PYTHON_FILES)
 
 format-web:
 	npx prettier $(JS_FILES) $(CSS_FILES) --write
@@ -25,8 +25,8 @@ freeze:
 
 # check code format
 format-check:
-	(isort -rc $(PYTHON_FILES) --check-only --multi-line=3 --trailing-comma --force-grid-wrap=0 --use-parentheses --line-width=88) && (black -t py37 --check $(PYTHON_FILES)) || (echo "run \"make format\" to format the code"; exit 1)
-	pylint -j0 $(PYTHON_FILES)
+	(isort --check-only --diff $(PYTHON_FILES)) && (black --check --diff $(PYTHON_FILES)) || (echo "run \"make format\" to format the code"; exit 1)
+	pylint $(PYTHON_FILES)
 	mypy --show-error-codes $(PYTHON_FILES)
 	npx prettier $(JS_FILES) $(CSS_FILES) --check
 	npx eslint $(JS_FILES)

@@ -9,9 +9,9 @@ from flask import Flask, redirect, render_template, send_from_directory
 from flask_frozen import Freezer
 from flaskext.markdown import Markdown
 
-site_data = {}
-site_data_path = ""
-extra_files = []
+site_data: dict = {}
+site_data_path: str = ""
+extra_files: list = []
 WATCHED_MARKDOWN = ["Alumni.md", "HKUST.md", "PreHKUST.md"]
 
 
