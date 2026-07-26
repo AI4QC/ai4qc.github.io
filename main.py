@@ -138,6 +138,11 @@ def summer_research_2026():
     return render_template("summer_research_2026.html", **_data())
 
 
+@app.route("/tools.html")
+def tools():
+    return render_template("tools.html", **_data())
+
+
 def _render_markdown_page(template_name, key, file_path):
     data = _data()
     if os.path.exists(file_path):

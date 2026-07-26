@@ -136,3 +136,21 @@ node_modules/
 
 # MacOS
 .DS_Store
+
+# AI coding assistants / local agent config
+.claude/
+CLAUDE.md
+.cursor/
+.cursorrules
+.cursorignore
+.gemini/
+GEMINI.md
+.codegraph/
+AGENTS.md
+.aider*
+.windsurf/
+.continue/
+.github/copilot-instructions.md
+.mcp.json
+.roo/
+.clinerules/

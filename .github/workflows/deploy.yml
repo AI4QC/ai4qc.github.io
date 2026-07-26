@@ -1,5 +1,5 @@
-# Workflow for building and deploying the COLM website to GitHub Pages
-name: Deploy COLM Website
+# Workflow for building and deploying the AI4PhysSci Lab website to GitHub Pages
+name: Deploy AI4QC Website
 
 on:
   # Trigger on pushes to the master branch
@@ -26,32 +26,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
+          cache: 'pip'
+          cache-dependency-path: requirements.txt
 
-      - name: Create and activate venv, install Python dependencies
+      - name: Install Python dependencies
         run: |
-          python -m venv venv
-          source venv/bin/activate
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
       - name: Build static site
-        run: |
-          source venv/bin/activate
-          make freeze
+        run: make freeze
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: build
 
@@ -65,6 +58,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deploy-pages
-        uses: actions/deploy-pages@v4
-        with:
-          artifact: build
+        uses: actions/deploy-pages@v5
