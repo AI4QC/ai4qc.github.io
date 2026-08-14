@@ -133,11 +133,6 @@ def hkust_credits():
     return render_template("hkust_credits.html", **_data())
 
 
-@app.route("/summer_research_2026.html")
-def summer_research_2026():
-    return render_template("summer_research_2026.html", **_data())
-
-
 @app.route("/tools.html")
 def tools():
     return render_template("tools.html", **_data())
