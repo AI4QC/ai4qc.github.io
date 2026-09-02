@@ -4,7 +4,7 @@
 
 {#
   To add / edit a tool, just append an entry to the list below.
-  Fields: name, tagline, module, lang, url, docs (optional), status
+  Fields: name, tagline, module, lang, url, docs / page / paper (optional), status
 #}
 {% set tools = [
   {
@@ -15,6 +15,17 @@
     "lang": "Python",
     "url": "https://github.com/AI4QC/catdt-gs",
     "status": "Active development"
+  },
+  {
+    "name": "PRIS",
+    "repo": "PRIS",
+    "tagline": "Plausibility Rules for Inorganic Structures: eight one-line laws, found by autonomous agents that proposed, tested and refuted two million candidates, that judge whether a crystal structure is physicochemically plausible and name the mechanism that fails. Cheap enough to screen a generator's output before any DFT.",
+    "module": "🔎 Evaluator",
+    "lang": "Python",
+    "url": "https://github.com/AI4QC/PRIS",
+    "page": "https://ai4qc.github.io/PRIS/",
+    "paper": "https://arxiv.org/abs/2609.01209",
+    "status": "Released · arXiv:2609.01209"
   },
 ] -%}
 
@@ -37,6 +48,12 @@
           <a class="tool-link" href="{{ tool.url }}" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
           {% if tool.docs %}
           <a class="tool-link" href="{{ tool.docs }}" target="_blank" rel="noopener">Docs&nbsp;↗</a>
+          {% endif %}
+          {% if tool.page %}
+          <a class="tool-link tool-link-extra" href="{{ tool.page }}" target="_blank" rel="noopener">Project page&nbsp;↗</a>
+          {% endif %}
+          {% if tool.paper %}
+          <a class="tool-link tool-link-extra" href="{{ tool.paper }}" target="_blank" rel="noopener">Paper&nbsp;↗</a>
           {% endif %}
         </div>
       </div>
@@ -101,6 +118,9 @@
     .tool-link {
       font-size: 0.85rem;
       margin-left: auto;
+    }
+    .tool-link-extra {
+      margin-left: 0;
     }
   </style>
 
