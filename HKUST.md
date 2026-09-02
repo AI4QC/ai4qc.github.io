@@ -1,3 +1,5 @@
+🤖[31] Song, Z., **Cheng, L.** Autonomous discovery of new structure-plausibility laws for explainable and rapid crystal diagnosis and screening. arXiv:2609.01209. (2026). [Link](https://arxiv.org/abs/2609.01209) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2609.01209"></span>
+
 🔍[30] Song, Z., Zhou, Q., Ling, C., Li, Q., **Cheng, L.**, Wang, J. Physics-grounded generative design of inherently stable, novel and controllable crystal structures. arXiv:2507.19307. (2026). [Link](https://arxiv.org/abs/2507.19307) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2507.19307"></span>
 
 🤖[29] Zhang, Z., Lou, Y., Zhang, B., Chen, J., Kuroki, R., Nguyen, X.V., Fako, E., **Cheng, L.**, Schwaller, P. AdsMind: A Physics-Grounded Multi-Agent System for Self-Correcting Discovery of Adsorption Configurations on Heterogeneous Catalyst Surfaces. arXiv:2606.19152. (2026). [Link](https://arxiv.org/abs/2606.19152) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2606.19152"></span>
