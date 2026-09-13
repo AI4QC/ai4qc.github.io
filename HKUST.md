@@ -1,3 +1,5 @@
+🔮[32] Jacobson, G.; Shao, C.; Bakalov, T. I.; **Cheng, L.**; McCoy, A. B., Machine-Learned Potentials for Accelerated CCSD(T)-level Evaluations: Applications to OH-(H2O)n. *ChemRxiv*, **2026**. [Link](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15008636) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.26434/chemrxiv.15008636"></span>
+
 🤖[31] Song, Z., **Cheng, L.** Autonomous discovery of new structure-plausibility laws for explainable and rapid crystal diagnosis and screening. arXiv:2609.01209. (2026). [Link](https://arxiv.org/abs/2609.01209) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2609.01209"></span>
 
 🔍[30] Song, Z., Zhou, Q., Ling, C., Li, Q., **Cheng, L.**, Wang, J. Physics-grounded generative design of inherently stable, novel and controllable crystal structures. arXiv:2507.19307. (2026). [Link](https://arxiv.org/abs/2507.19307) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2507.19307"></span>
