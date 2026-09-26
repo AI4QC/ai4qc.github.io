@@ -46,9 +46,9 @@ committee:
     ws: https://peninsula824.github.io/
     git: peninsula824
 
-  - role: Incoming PhD Student
+  - role: PhD Student
     name: Wenwei Cai
-    phd: MEng. in Materials Physics and Chemistry, Peking University (2026Fall, Chemistry(SC), HKUST)
+    phd: MEng. in Materials Physics and Chemistry, Peking University (2026 Fall, Chemistry(SC), HKUST)
     email: 2301212698@stu.pku.edu.cn 
     im: static/images/wenwei_cai.jpg 
     git: caiww1117
@@ -67,9 +67,9 @@ committee:
     im: static/images/chengxin_hu.jpg  
     git: ChengxinHU
 
-  - role: Joint Research Assistant (w/ Sichuan University, Prof. Wu) 
+  - role: Incoming PhD Student (Joint Research Assistant w/ Sichuan University, Prof. Wu) 
     name: Haoxiang Yin
-    phd: MSc. in Chemistry, Sichuan University
+    phd: MSc. in Chemistry, Sichuan University (Incoming PhD, Chemistry(SC), HKUST)
     im: static/images/haoxiang_yin.jpg
     email: hxyin001@gmail.com
     git: Yinhx614
