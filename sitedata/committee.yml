@@ -55,10 +55,17 @@ committee:
 
   - role: Incoming PhD Student
     name: Masoud Mozafari
-    phd: BSc. in Applied Chemistry, Sharif University Of Technology (2026Fall, Chemistry(SC), HKUST)
+    phd: BSc. in Applied Chemistry, Sharif University Of Technology (2027 Spring, Chemistry(SC), HKUST)
     email: masoudmozafarivanani@gmail.com
     im: static/images/masoud_mozafari.jpg 
     git: masoudmv
+
+  - role: Incoming PhD Student
+    name: Haoxiang Yin
+    phd: MSc. in Chemistry, Sichuan University (2027 Spring, Chemistry(SC), HKUST)
+    im: static/images/haoxiang_yin.jpg
+    email: hxyin001@gmail.com
+    git: Yinhx614
 
   - role: Research Assistant
     name: Chengxin Hu (Albert)
@@ -66,13 +73,6 @@ committee:
     email: huchengxin38@gmail.com
     im: static/images/chengxin_hu.jpg  
     git: ChengxinHU
-
-  - role: Incoming PhD Student (Joint Research Assistant w/ Sichuan University, Prof. Wu) 
-    name: Haoxiang Yin
-    phd: MSc. in Chemistry, Sichuan University (Incoming PhD, Chemistry(SC), HKUST)
-    im: static/images/haoxiang_yin.jpg
-    email: hxyin001@gmail.com
-    git: Yinhx614
 
   - role: Undergraduate Research Assistant
     name: Xinyi Wu (Cindy)
