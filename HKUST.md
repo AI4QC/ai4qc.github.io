@@ -1,3 +1,5 @@
+🔍[33] Song, Z., Pang, Z., **Cheng, L.** Probing the Limits of Forward Screening and Inverse Design of Crystal Materials. arXiv:2610.32678. (2026). [Link](https://arxiv.org/abs/2610.32678) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2610.32678"></span>
+
 🔮[32] Jacobson, G.; Shao, C.; Bakalov, T. I.; **Cheng, L.**; McCoy, A. B., Machine-Learned Potentials for Accelerated CCSD(T)-Level Evaluations: Applications to OH-(H2O)n. *ChemRxiv*, **2026**. [Link](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15008636) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.26434/chemrxiv.15008636"></span>
 
 🤖[31] Song, Z., **Cheng, L.** Autonomous Discovery of New Structure-Plausibility Laws for Explainable and Rapid Crystal Diagnosis and Screening. arXiv:2609.01209. (2026). [Link](https://arxiv.org/abs/2609.01209) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2609.01209"></span>
