@@ -1,0 +1,109 @@
+committee:
+  - role: Principal Investigator
+    name: Lixue Cheng (Sherry)
+    phd: PhD, California Institute of Technology
+    undergrad: BS, University of Wisconsin-Madison
+    cv: https://sherrylixuecheng.github.io/cv/
+    im: static/images/sherry.jpg
+    email: lixuecheng@ust.hk
+    tw: SherryLixueC
+    ws: https://sherrylixuecheng.github.io/
+    git: sherrylixuecheng
+
+  - role: Postdoctoral Fellow
+    name: Zhilong Song
+    phd: PhD in Physics, Southeast University
+    cv: https://www.zlsong.com
+    email: zhilong@seu.edu.cn
+    im: static/images/zhilong_song.jpg
+    ws: https://www.zlsong.com
+    git: szl666 
+
+  - role: Postdoctoral Fellow
+    name: Sichao Fu
+    phd: PhD in Information and Communication Engineering, Huazhong University of Science and Technology
+    cv: https://www.scholat.com/fusichao
+    email: fusichao_hust@163.com
+    im: static/images/sichao_fu.jpg
+    ws: https://www.scholat.com/fusichao
+    git: https://github.com/SichaoFu
+
+  - role: Postdoctoral Fellow (Joint w/ University of Cambridge, co-supervised by Prof. Bartomeu Monserrat)
+    name: Yilei Wu
+    phd: PhD in Physics, Southeast University
+    cv: https://wuyileiiiii.github.io/
+    email: yw802@cam.ac.uk
+    im: static/images/yilei_wu.jpeg
+    ws: https://wuyileiiiii.github.io/
+    git: wuyileiiiii
+
+  - role: Research Student
+    name: Tianyao Tan
+    phd: Master student in Physics, HKUST 
+    cv: https://peninsula824.github.io/
+    email: ttanag@connect.ust.hk
+    im: static/images/tianyao_tan.jpg 
+    ws: https://peninsula824.github.io/
+    git: peninsula824
+
+  - role: PhD Student
+    name: Wenwei Cai
+    phd: MEng. in Materials Physics and Chemistry, Peking University (2026 Fall, Chemistry(SC), HKUST)
+    email: 2301212698@stu.pku.edu.cn 
+    im: static/images/wenwei_cai.jpg 
+    git: caiww1117
+
+  - role: Incoming PhD Student
+    name: Masoud Mozafari
+    phd: BSc. in Applied Chemistry, Sharif University Of Technology (2027 Spring, Chemistry(SC), HKUST)
+    email: masoudmozafarivanani@gmail.com
+    im: static/images/masoud_mozafari.jpg 
+    git: masoudmv
+
+  - role: Incoming PhD Student
+    name: Haoxiang Yin
+    phd: MSc. in Chemistry, Sichuan University (2027 Spring, Chemistry(SC), HKUST)
+    im: static/images/haoxiang_yin.jpg
+    email: hxyin001@gmail.com
+    git: Yinhx614
+
+  - role: Research Assistant
+    name: Chengxin Hu (Albert)
+    phd: MSc. in Precision Health and Medicine, NUS
+    email: huchengxin38@gmail.com
+    im: static/images/chengxin_hu.jpg  
+    git: ChengxinHU
+
+  - role: Undergraduate Research Assistant
+    name: Xinyi Wu (Cindy)
+    undergrad: 3rd year, BS in Computer Sciences, University of Wisconsin-Madison 
+    im: static/images/xinyi_wu.jpg
+    cv: https://cindy901717.github.io/
+    email: xwu573@wisc.edu
+    ws: https://cindy901717.github.io/
+    git: cindy901717
+
+  - role: Undergraduate Research Assistant
+    name: Hiuyu Ting (Hiu)
+    undergrad: 3rd year, BSc in Chemistry (Minor in Computer Science), HKUST
+    im: static/images/hiuyu_ting.jpg
+    cv: na
+    email: hytingaa@connect.ust.hk
+    ws: na
+    git: TING-HiuYu
+
+  - role: Undergraduate Research Assistant
+    name: Zongmin Zhang (Nagato)
+    undergrad: 3rd year, BEng in Computer Science (Minor in Chemistry), HKUSTs
+    im: static/images/zongmin_zhang.jpg
+    cv: https://www.linkedin.com/in/zongmin-zhang/
+    email: zzhanghw@connect.ust.hk
+    ws: nagatobigseven.github.io
+    git: NagatoBigSeven
+
+  - role: Undergraduate Research Assistant
+    name: Heung Law (Tony)
+    im: static/images/heung_law.jpg
+    undergrad: 2nd year, BSc in Chemistry (IRE Track), Minor in Mathematics, HKUST
+    email: hlawac@connect.ust.hk
+    git: tonylawlawlaw

@@ -1,0 +1,30 @@
+name: AI4QC Lab
+tagline: Welcome to AI for Physical Sciences Lab @ HKUST <br> 欢迎来到物质科学人工智能实验室 @ 香港科技大学 
+analytics: UA-
+logo:
+  image: static/images/ai4qclogo.png
+  width: 180px
+  height: auto
+# uncomment the following line to show the site title next to the logo image
+# site_title: MiniConf
+page_title:
+  prefix: "AI4PhysSci Lab"
+  separator: ": "
+background_image: static/images/hkust.jpg
+organization:  AI4PhysSci Lab, The Hong Kong University of Science and Technology. 
+
+# Configuration for auth
+#Test user
+#user: miniconf@miniconf.com
+#pass: mIniconf1_
+
+use_auth0:
+auth0_client_id: JIdr6wi0z27LyLgwkJF0fpk700aj7MNH
+auth0_domain: miniconf.auth0.com
+
+calendar:
+  colors: #  Colors for the different event hashtags:
+    ---: "#A28444"
+    qa: "#4FCAEB"
+    talk: "#ccc"
+  sunday_saturday: false #  Include Sunday and Saturday

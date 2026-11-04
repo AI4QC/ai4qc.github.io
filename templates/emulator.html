@@ -1,0 +1,60 @@
+{% set active_page = "Emulator" %}
+{% set page_title = "Emulator" %}
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- Contact -->
+    {{ components.section("Orbital-based Chemical Representation & Learning ") }}
+
+    <title>Insert image</title>
+    <style>
+      .image-wrapper {
+      float: right;
+      width: 40%;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .text-content {
+      overflow: hidden; /* ensures container grows around floated content */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="text-content">
+    <div class="image-wrapper">
+      <img src="static/images/orbitals.gif" alt="orbital graph">
+    </div>
+
+    <p class="h4" > <b>🔬 TransOrb: A Unified Orbital-Based Learning Framework </b> </p>
+    <p> TransOrb is proposed to a next-generation framework that unifies molecular orbital (MO)- & atomic orbital (AO)-based learning to enable accurate, scalable, and transferable predictions of electronic structure properties across diverse chemical systems. Building on our earlier works—MOB-ML (targeting high-accuracy with small data) & OrbNet (targeting large-scale systems with DFT-level accuracy)—TransOrb integrates the strengths of both methods to span the entire landscape of quantum chemical modeling . Also, this framework leverages MO and/or AO features represented by information post-processed/transformed from energy matrices obtained from various SCF procedure with different costs. E.g., more expensive SCF procedure (e.g., Hartree–Fock) and/or efficient semi-empirical methods (e.g., GFN2-xTB). <b>This general representation and framework can bridge different levels of theory and different sizes of data availability via various learning protocols & downstream tasks at both ground & excited states.</b></p> 
+    <p><i>Note: MOB-ML was Prof. Cheng's PhD research direction and is no longer an active student-recruitment topic.</i></p>
+    <p class="h5"><b>Some possible learning modes including: </b></p>
+<ul>
+    <p><li> 🧬 General representation of chemical systems via contrastive representation learning </li></p>
+    <p><li> 📈 Efficient & uncertainty-aware wavefunction-related property prediction by supervised learning (regression), using deep kernel learning from limited <a href="simulator.html">Simulator</a> data</li></p>
+    <p><li> 🗺️ Unsupervised learning for chemical space exploration</li></p>
+    <p><li> 🔧 MO/AO fitting room: Generative modeling to design systems with target properties by combining useful orbitals</li></p>
+    <p><li> 🧠 Transfer learning across chemical datasets</li></p>
+    <p>✨ And more...</p>
+</ul>
+    <p class="h5"><b>🎯 Some possible downstream tasks include:</b></p>
+<ul>
+  <p><li>🔬 Accurate prediction of molecular & material energies and properties</li></p>
+  <p><li>🗂️ Molecular screening and virtual high-throughput experiments</li></p>
+  <p><li>🧩 Reaction pathway modeling and transition state prediction</li></p>
+  <p><li>🧪 Generation of potential energy surfaces (PESs) for dynamics simulations (See <a href="predictor.html">Predictor </a> )</li></p>
+  <p><li>🧬 Support for drug discovery and material design</li></p>
+</ul>
+    <p>✨ And more...</p>
+
+    </p>
+
+{% endblock %}

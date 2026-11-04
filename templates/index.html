@@ -1,0 +1,247 @@
+{% set active_page = "Home" %} {% extends "base.html" %} {% block top %}
+<style>
+    .back {
+        position: relative;
+        background: url("{{config.background_image}}") center/cover no-repeat;
+        background-color: rgba(48, 89, 176, 0.7);
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 35px 70px rgba(15, 23, 54, 0.35);
+    }
+    .back h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        color: #A28544;
+        text-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
+        letter-spacing: 0.04em;
+        display: inline-block;
+        padding: 0.85rem 2.6rem;
+        background: rgba(25, 49, 122, 0.55);
+        border-radius: 999px;
+        margin: 0;
+    }
+    .avatar-launcher {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 1100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.35rem;
+    }
+    .avatar-launcher button {
+        border: none;
+        background: transparent;
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        padding: 0;
+    }
+    .avatar-launcher button img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    @keyframes avatarWave {
+        0% { transform: scale(1) rotate(0deg); }
+        25% { transform: scale(1.06) rotate(-4deg); }
+        50% { transform: scale(1.05) rotate(4deg); }
+        75% { transform: scale(1.03) rotate(-2deg); }
+        100% { transform: scale(1) rotate(0deg); }
+    }
+    .avatar-launcher button.avatar-animate img {
+        animation: avatarWave 0.85s ease;
+    }
+    .avatar-launcher button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    }
+    .avatar-launcher span {
+        font-size: 1.05rem;
+        color: #1d2d50;
+        font-weight: 600;
+        text-shadow: none;
+        letter-spacing: 0.01em;
+    }
+    .avatar-modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1200;
+        padding: 1rem;
+    }
+    .avatar-modal.open {
+        display: flex;
+    }
+    .avatar-modal-content {
+        background: #000;
+        border-radius: 18px;
+        overflow: hidden;
+        width: min(420px, 90vw);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+        position: relative;
+    }
+    .avatar-modal video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .avatar-modal button.close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        border: none;
+        color: #fff;
+        font-size: 1.1rem;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container back" style="padding-bottom: 120px; padding-top: 150px">
+    <div class="row header">
+        <div class="p-1 text-center col-md-12 col-sm-12">
+            <h2>{{config.tagline|safe}}</h2>
+        </div>
+    </div>
+</div>
+
+<div class="avatar-launcher">
+    <button id="avatarButton" aria-label="Play welcome video">
+        <img src="static/images/avatar_actions/avatar.png" alt="Digital avatar thumbnail"/>
+    </button>
+    <span>Meet our avatar</span>
+</div>
+<div class="avatar-modal" id="avatarModal" aria-hidden="true">
+    <div class="avatar-modal-content">
+        <button type="button" class="close-modal" id="closeAvatar" aria-label="Close video">×</button>
+        <video id="avatarVideo" controls preload="none">
+            <source src="static/images/welcome_video.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- <div class="alert alert-info" role="alert">
+    <center><strong>Please volunteer to the program committee <a href="https://forms.gle/rZp67YvMn1hnM6wV8">here</a>, both reviewers and ACs needed!</strong></center>
+</div> -->
+
+
+{{ components.section("AI for Physical Sciences Lab") }}
+
+<div class="body-copy" style="padding-bottom: 50px">
+    <p>We are an <b>AI for science</b> lab rooted in the fields of <b>AI × quantum × chemistry</b> to develop <b>Lego-like AI-powered tools that revolutionize the chemistry research paradigm</b>. At our core, we’re dedicated to using the latest advances in artificial intelligence and quantum computing to create <b>practical, reliable tools</b> that tackle <b>real-world scientific challenges</b>. Guided by the philosophy of <b>“developing useful, not just fancy, tools,”</b> we explore the frontiers of AI4Science and build resources that scientists can truly use. While our central focus is on quantum chemistry, our interests extend broadly to address diverse challenges across the scientific landscape.</p>
+    <p>🔬 Applying <b>AI and deep learning</b> to solve <b>electronic-structure</b> problems, including complex and strongly correlated systems.</p>
+    <p>⚛️ Designing <b>AI-assisted quantum algorithms</b> for hardware and leveraging AI × quantum computing to accelerate chemical discovery.</p>
+    <p>🔗 Developing a <b>foundation model</b> for computational chemistry via <b>multi-scale, physics-informed models</b> that integrate <b>data-driven and physics-driven approaches</b>.</p>
+    <p>🌐 Building <b>experiment-friendly, open-source protocols</b> that bridge computational predictions with laboratory experiments.</p>
+    <p>🤝 We believe in <b>collaboration and community</b>: beyond fundamental research, we strive to make our tools accessible and user-friendly for experimentalists and non-AI experts. As active contributors to and members of the <b><a href="https://ai4sciencecommunity.github.io/">AI4Science community</a></b>, we are also engaged in outreach and education to inspire the next generation of scientists. We are members of the <b><a href="https://ccqs.hkust.edu.hk/">IAS Center for Complex Quantum Systems</a></b>, the <b><a href="https://iascasd.hkust.edu.hk/">IAS Center for AI for Scientific Discoveries</a></b>, and the <b><a href="https://vni.ust.hk/">HKUST Von Neumann Institute</a></b>, and we are affiliated with the <b><a href="https://chem.hkust.edu.hk/">HKUST Department of Chemistry</a></b> and the <b><a href="https://cbe.hkust.edu.hk/faculty">HKUST Department of Chemical and Biological Engineering</a></b>.</p>
+    <p>We welcome motivated students, researchers, and potential collaborators to <a href="openings.html">join us!</a> Let’s work together to push the boundaries of computational chemistry and AI for Science.</p>
+</div>
+
+<script>
+  (function () {
+    const button = document.getElementById("avatarButton");
+    const modal = document.getElementById("avatarModal");
+    const closeBtn = document.getElementById("closeAvatar");
+    const video = document.getElementById("avatarVideo");
+    const avatarImg = button.querySelector("img");
+    const avatarActionFrames = [
+      "你好.png",
+      "写代码.png",
+      "思考.png",
+      "有想法.png",
+      "比耶.png",
+      "谢谢.png",
+      "合作愉快.png",
+      "抓蝴蝶.png",
+      "摸摸头.png"
+    ].map(name => `static/images/avatar_actions/${name}`);
+    let actionTimer = null;
+
+
+    function triggerAvatarAction() {
+      avatarImg.src =
+        avatarActionFrames[Math.floor(Math.random() * avatarActionFrames.length)];
+    }
+
+    function scheduleNextAction(delayOverride) {
+      const delay =
+        typeof delayOverride === "number" ? delayOverride : 4000 + Math.random() * 3000;
+      actionTimer = setTimeout(() => {
+        triggerAvatarAction();
+        scheduleNextAction();
+      }, delay);
+    }
+
+    setTimeout(() => scheduleNextAction(), 10000);
+
+    function closeModal() {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      if (!video.paused) {
+        video.pause();
+      }
+      video.currentTime = 0;
+    }
+
+    button.addEventListener("click", function () {
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      video.play();
+    });
+
+    closeBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      closeModal();
+    });
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  })();
+</script>
+
+<!-- Live2D widget (kanban musume) -->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+  L2Dwidget.init({
+    model: {
+      jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+      scale: 1
+    },
+    display: {
+      position: "right",
+      width: 170,
+      height: 300,
+      hOffset: 20,
+      vOffset: -10
+    },
+    mobile: {
+      show: true,
+      scale: 0.6
+    },
+    react: {
+      opacityDefault: 0.75,
+      opacityOnHover: 0.2
+    }
+  });
+</script>
+
+{% endblock %}

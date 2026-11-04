@@ -1,0 +1,72 @@
+# pylint configuration for the AI4QC website.
+# Written against pylint 3.x -- options removed in pylint 2/3 (optimize-ast,
+# files-output, no-space-check, bad-functions, *-name-hint, ...) are gone, and
+# every entry in `disable` below is a message name that still exists.
+
+[MAIN]
+ignore=CVS
+ignore-patterns=.*_pb2.py
+persistent=no
+jobs=0
+extension-pkg-allow-list=torch
+
+[MESSAGES CONTROL]
+disable=
+    # Style choices we deliberately do not enforce; black owns formatting.
+    line-too-long,
+    invalid-name,
+    no-else-return,
+    unnecessary-pass,
+    # This is a small Flask app of thin view functions -- docstrings on every
+    # route would be noise.
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    too-few-public-methods,
+    # main.py intentionally caches the parsed site data in module-level state
+    # so Flask views and the freezer share one copy.
+    global-statement,
+    # Third-party imports are not installed in every environment that runs pylint.
+    import-error,
+    # Design limits: this is a website generator, not a library.
+    too-many-instance-attributes,
+    too-many-arguments,
+    too-many-positional-arguments,
+    too-many-locals,
+    too-many-statements,
+    too-many-return-statements,
+    too-many-branches,
+    # Legacy carry-overs from the MiniConf template.
+    fixme,
+    bare-except,
+    arguments-differ,
+    not-callable
+
+[REPORTS]
+output-format=text
+reports=no
+score=no
+
+[FORMAT]
+max-line-length=120
+ignore-long-lines=^\s*(# )?<?https?://\S+>?$
+single-line-if-stmt=no
+max-module-lines=1000
+indent-string='    '
+indent-after-paren=4
+expected-line-ending-format=LF
+
+[BASIC]
+good-names=i,j,k,r,u,ex,Run,_,fp,app
+
+[SIMILARITIES]
+min-similarity-lines=6
+ignore-comments=yes
+ignore-docstrings=yes
+ignore-imports=yes
+
+[VARIABLES]
+dummy-variables-rgx=_+$|(_[a-zA-Z0-9_]*[a-zA-Z0-9]+?$)|dummy
+
+[LOGGING]
+logging-modules=logging

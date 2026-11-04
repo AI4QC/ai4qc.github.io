@@ -1,0 +1,14 @@
+{% set active_page = "Pre-HKUST" %}
+{% set page_title = "Pre-HKUST" %}
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2>
+    Pre-HKUST Publication
+</h2>
+<div class="h5" style="line-height: 1.5;">
+{{ PreHKUST | markdown }}
+</div>
+{% endblock %}
