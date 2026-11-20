@@ -1,6 +1,6 @@
 <sup>#</sup> Co-first author; <sup>\*</sup> Corresponding author
 
-🔍[33] Song, Z., Pang, Z., **Cheng, L.** Probing the Limits of Materials Design via a Comprehensive Crystal Database of 14.6 Million Structures with 140 Properties. arXiv:2610.32678. (2026). [Link](https://arxiv.org/abs/2610.32678) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2610.32678"></span>
+🔍[33] Song, Z., Pang, Z., **Cheng, L.**<sup>\*</sup> Probing the Limits of Materials Design via a Comprehensive Crystal Database of 14.6 Million Structures with 140 Properties. arXiv:2610.32678. (2026). [Link](https://arxiv.org/abs/2610.32678) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2610.32678"></span>
 
 🔮[32] Jacobson, G.; Shao, C.; Bakalov, T. I.; **Cheng, L.**; McCoy, A. B.<sup>\*</sup>, Machine-Learned Potentials for Accelerated CCSD(T)-level Evaluations: Applications to OH(H2O)n. *ChemRxiv*, **2026**. [Link](https://chemrxiv.org/doi/abs/10.26434/chemrxiv.15008636/v1) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.26434/chemrxiv.15008636/v1"></span>
 
@@ -14,9 +14,9 @@
 
 🤖[27] Xu, W., Li, S., Ye, T., Cao, Q., Chen, Y., Gao, H., Wang, Y., Li, Q., Li, K., Xu, S., Chai, S., Yu, F., Zhao, X., Zhao, Z., Ma, W., Guo, Z., Wu, K., Zhou, H., Yin, H., **Cheng, L.**, Hu, C., Li, H., Mi, L., Xie, X., Zhou, Y., Chen, R., Zhou, Z., Guo, X., Zhou, Y., He, X., Xu, S., Gu, X., Wu, J., Liu, M., Song, C., Ling, F., Zhou, D., Tang, S., Li, Y., Su, M., Ye, P., Sun, S., Wang, B., Yang, X., Yin, Z., Fu, T., Zhai, G., Ouyang, W., Zhang, B., Bai, L., Zhang, W. ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research. arXiv:2606.07591. (2026). [Link](https://arxiv.org/abs/2606.07591) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2606.07591"></span>
 
-🧪[26] Xiao, Z., Ding, X., Lou, Y., **Cheng, L.**, Li, C.<sup>\*</sup> A Survey of Neural Network Variational Monte Carlo from a Computing Workload Characterization Perspective. arXiv:2603.18126. (2026). [Link](https://arxiv.org/abs/2603.18126) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2603.18126"></span>
+🧪[26] Xiao, Z., Ding, X., Lou, Y., **Cheng, L.**<sup>\*</sup>, Li, C.<sup>\*</sup> A Survey of Neural Network Variational Monte Carlo from a Computing Workload Characterization Perspective. arXiv:2603.18126. (2026). [Link](https://arxiv.org/abs/2603.18126) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2603.18126"></span>
 
-🤖[25] Li, W., Ren, J., **Cheng, L.**, Gong, C.<sup>\*</sup> Autonomous Quantum Simulation through Large Language Model Agents. arXiv:2601.10194. (2026). [Link](https://arxiv.org/abs/2601.10194) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2601.10194"></span>
+🤖[25] Li, W.<sup>\*</sup>, Ren, J., **Cheng, L.**, Gong, C. Autonomous Quantum Simulation through Large Language Model Agents. arXiv:2601.10194. (2026). [Link](https://arxiv.org/abs/2601.10194) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2601.10194"></span>
 
 🔮[24] Wang, C.<sup>#</sup>, Huang, L.<sup>#</sup>, Wei, X.<sup>#</sup>, Qin, T., Jiang, A., **Cheng, L.**<sup>#\*</sup>, Zhang, J.<sup>\*</sup> Scalable Machine Learning Force Fields for Macromolecular Systems Through Long-Range Aware Message Passing. arXiv:2601.03774. (2026). [Link](https://arxiv.org/abs/2601.03774) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2601.03774"></span>
 
@@ -24,4 +24,4 @@
 
 🔮[22] Chen, Y., **Cheng, L.**, Jing, Y. and Zhong, P.<sup>\*</sup> Benchmarking Foundation Potentials against Quantum Chemistry Methods for Predicting Molecular Redox Potentials. *Precis. Chem.*, **2026**, [Link](https://pubs.acs.org/doi/10.1021/prechem.5c00258) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/prechem.5c00258"></span>
 
-🔮[21] Jacobson, G.M., Webb, A.W., **Cheng, L.**, and McCoy, A.B.<sup>\*</sup>  Diffusion Monte Carlo Study of the Structure and Spectroscopy of H3O-, *J. Phys. Chem. A.*, **2025** [Link](https://pubs.acs.org/doi/10.1021/acs.jpca.5c06590) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jpca.5c06590"></span>
+🔮[21] Jacobson, G.M., Webb, A.W., **Cheng, L.**<sup>\*</sup>, and McCoy, A.B.<sup>\*</sup>  Diffusion Monte Carlo Study of the Structure and Spectroscopy of H3O-, *J. Phys. Chem. A.*, **2025** [Link](https://pubs.acs.org/doi/10.1021/acs.jpca.5c06590) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jpca.5c06590"></span>
