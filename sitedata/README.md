@@ -53,7 +53,7 @@ committee:
     from `static/images/mbti/frames/<frame name>.png` (the pill is then hidden, since the
     frame carries its own label)
 
-Available frames: `enfp-shiba`, `entj-lion`, `intj-owl`, `esfp-dolphin`.
+Available frames: `enfp-shiba`, `entj-lion`, `intj-owl`, `esfp-dolphin`, `entp-fox`.
 
 To add a new frame:
 
