@@ -56,6 +56,8 @@ committee:
     email: 2301212698@stu.pku.edu.cn 
     im: static/images/wenwei_cai.jpg 
     git: caiww1117
+    mbti: INTJ
+    mbti_frame: intj-owl
 
   - role: Incoming PhD Student
     name: Masoud Mozafari
