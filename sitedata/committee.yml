@@ -40,6 +40,8 @@ committee:
     im: static/images/yilei_wu.jpeg
     ws: https://wuyileiiiii.github.io/
     git: wuyileiiiii
+    mbti: ENTP
+    mbti_frame: entp-fox
 
   - role: Research Student
     name: Tianyao Tan
