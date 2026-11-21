@@ -77,6 +77,13 @@ workshopgroup
 {%- endmacro %}
 
 {% macro organizergroup(committee) -%}
+{% set mbti_groups = {
+  "INTJ": "analyst", "INTP": "analyst", "ENTJ": "analyst", "ENTP": "analyst",
+  "INFJ": "diplomat", "INFP": "diplomat", "ENFJ": "diplomat", "ENFP": "diplomat",
+  "ISTJ": "sentinel", "ISFJ": "sentinel", "ESTJ": "sentinel", "ESFJ": "sentinel",
+  "ISTP": "explorer", "ISFP": "explorer", "ESTP": "explorer", "ESFP": "explorer"
+} %}
+{% set mbti_badges = ["ENFP", "ENTJ", "INTJ"] %}
 <div class="row">
   {% for org in committee %}
   <div class="col-md-4 col-xs-6">
@@ -127,9 +134,15 @@ workshopgroup
         </h6>
         </div>
         <center>
-          <a href="{{org.ws}}"></a>
-          <img src="{{org.im}}" class="rounded" style="height: 100px; width: auto; max-width: 100%; object-fit: cover;" />
-        </a>
+          <div class="mbti-avatar mbti-{{ mbti_groups.get(org.mbti, 'plain') }}">
+            <img src="{{org.im}}" class="rounded mbti-avatar-img" style="height: 100px; width: auto; max-width: 100%; object-fit: cover;" />
+            {% if org.mbti in mbti_badges %}
+            <img src="static/images/mbti/{{ org.mbti|lower }}.png" class="mbti-avatar-badge" alt="{{ org.mbti }}" />
+            {% endif %}
+          </div>
+          {% if org.mbti %}
+          <div class="mbti-pill mbti-{{ mbti_groups.get(org.mbti, 'plain') }}">{{ org.mbti }}</div>
+          {% endif %}
         </center>
       </div>
     </div>
