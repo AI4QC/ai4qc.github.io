@@ -72,6 +72,8 @@ committee:
     im: static/images/haoxiang_yin.jpg
     email: hxyin001@gmail.com
     git: Yinhx614
+    mbti: INTJ
+    mbti_frame: intj-owl
 
   - role: Research Assistant
     name: Chengxin Hu (Albert)
