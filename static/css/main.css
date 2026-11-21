@@ -617,18 +617,23 @@ body .carousel-control-prev {
 }
 
 /* 16personalities 阵营 · 马卡龙柔色 */
-.mbti-diplomat { /* 绿人 NF: ENFP/ENFJ/INFJ/INFP */
+.mbti-diplomat {
+  /* 绿人 NF: ENFP/ENFJ/INFJ/INFP */
   --mbti-frame: #7cc9a3;
 }
-.mbti-analyst {  /* 紫人 NT: ENTJ/INTJ/ENTP/INTP */
+.mbti-analyst {
+  /* 紫人 NT: ENTJ/INTJ/ENTP/INTP */
   --mbti-frame: #a78bc9;
 }
-.mbti-sentinel { /* 蓝人 SJ: ESTJ/ESFJ/ISTJ/ISFJ */
+.mbti-sentinel {
+  /* 蓝人 SJ: ESTJ/ESFJ/ISTJ/ISFJ */
   --mbti-frame: #7fa8d4;
 }
-.mbti-explorer { /* 黄人 SP: ESTP/ESFP/ISTP/ISFP */
+.mbti-explorer {
+  /* 黄人 SP: ESTP/ESFP/ISTP/ISFP */
   --mbti-frame: #e3bb73;
 }
-.mbti-plain {    /* 未挂 MBTI: 普通边框 */
+.mbti-plain {
+  /* 未挂 MBTI: 普通边框 */
   --mbti-frame: #d6dde6;
 }
