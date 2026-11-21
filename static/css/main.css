@@ -573,6 +573,36 @@ body .carousel-control-prev {
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.18);
 }
 
+/* Square photo frame: photo fills the frame's window, PNG overlay on top */
+.mbti-frame {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  aspect-ratio: 1 / 1;
+}
+
+.mbti-frame-window {
+  position: absolute;
+  inset: var(--mbti-window, 16%);
+}
+
+.mbti-frame-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 10%;
+}
+
+.mbti-frame-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 .mbti-pill {
   display: inline-block;
   margin-top: 14px;

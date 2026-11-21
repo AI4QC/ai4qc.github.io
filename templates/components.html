@@ -84,6 +84,16 @@ workshopgroup
   "ISTP": "explorer", "ISFP": "explorer", "ESTP": "explorer", "ESFP": "explorer"
 } %}
 {% set mbti_badges = ["ENFP", "ENTJ", "INTJ"] %}
+{#- Square photo frames, chosen per person with `mbti_frame: <name>` in committee.yml.
+    File: static/images/mbti/frames/<name>.png (512x512, transparent window).
+    window = where the photo sits, as CSS inset "top right bottom left" in % of the frame,
+    extended ~1% under the inner rim so no gap shows. -#}
+{% set mbti_frames = {
+  "enfp-shiba": {"window": "16% 16% 18% 16%"},
+  "entj-lion": {"window": "14% 15% 20% 15%"},
+  "intj-owl": {"window": "13% 16% 19% 15%"},
+  "esfp-dolphin": {"window": "21% 20% 22% 21%"}
+} %}
 <div class="row">
   {% for org in committee %}
   <div class="col-md-4 col-xs-6">
@@ -134,6 +144,13 @@ workshopgroup
         </h6>
         </div>
         <center>
+          {% set frame = mbti_frames.get(org.mbti_frame) %}
+          {% if frame %}
+          <div class="mbti-frame" style="--mbti-window: {{ frame.window }};">
+            <div class="mbti-frame-window"><img src="{{org.im}}" class="mbti-frame-photo" alt="{{ org.name }}" /></div>
+            <img src="static/images/mbti/frames/{{ org.mbti_frame }}.png" class="mbti-frame-overlay" alt="{{ org.mbti }} frame" />
+          </div>
+          {% else %}
           <div class="mbti-avatar mbti-{{ mbti_groups.get(org.mbti, 'plain') }}">
             <img src="{{org.im}}" class="rounded mbti-avatar-img" style="height: 100px; width: auto; max-width: 100%; object-fit: cover;" />
             {% if org.mbti in mbti_badges %}
@@ -142,6 +159,7 @@ workshopgroup
           </div>
           {% if org.mbti %}
           <div class="mbti-pill mbti-{{ mbti_groups.get(org.mbti, 'plain') }}">{{ org.mbti }}</div>
+          {% endif %}
           {% endif %}
         </center>
       </div>

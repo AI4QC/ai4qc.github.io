@@ -46,6 +46,25 @@ committee:
     im: https://en.wikipedia.org/wiki/Homer_Simpson#/media/File:Homer_Simpson_2006.png 
 ```
 
+#### MBTI (optional)
+
+  - mbti: `<type, e.g. ENFP>` — colours the photo border and shows a type pill
+  - mbti_frame: `<frame name>` — replaces the photo with a decorated square frame
+    from `static/images/mbti/frames/<frame name>.png` (the pill is then hidden, since the
+    frame carries its own label)
+
+Available frames: `enfp-shiba`, `entj-lion`, `intj-owl`, `esfp-dolphin`.
+
+To add a new frame:
+
+1. Generate a square frame on a **flat magenta background**, with the empty window also
+   magenta and no magenta inside the frame art.
+2. Run
+   `python3 scripts/make_mbti_frame.py source.png static/images/mbti/frames/<name>.png --label INTJ --color "#8a6fb5" --photo static/images/you.jpg --preview /tmp/preview.png`
+   and look at the `--check` image for pink fringes (the `edge px with magenta cast` count should be 0 for non-purple frames; purple frames legitimately report some).
+3. Add `"<name>": {"window": "<printed value>"}` to `mbti_frames` in
+   `templates/components.html`, then set `mbti_frame: <name>` on your entry.
+
 <hr>
 
 ### papers [.csv | .json | .yml]

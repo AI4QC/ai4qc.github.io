@@ -10,6 +10,7 @@ committee:
     ws: https://sherrylixuecheng.github.io/
     git: sherrylixuecheng
     mbti: ENFP
+    mbti_frame: enfp-shiba
 
   - role: Postdoctoral Fellow
     name: Zhilong Song
@@ -19,6 +20,8 @@ committee:
     im: static/images/zhilong_song.jpg
     ws: https://www.zlsong.com
     git: szl666 
+    mbti: ENTJ
+    mbti_frame: entj-lion
 
   - role: Postdoctoral Fellow
     name: Sichao Fu
