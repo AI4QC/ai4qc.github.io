@@ -638,13 +638,15 @@ body .carousel-control-prev {
   --mbti-frame: #d6dde6;
 }
 
-/* Zodiac charm: small pendant pinned to the top-right of the MBTI frame */
+/* Zodiac charm: pendant hanging off the top-right corner of the MBTI frame.
+   It sits level with the frame top (never above it, where it would cover the
+   GitHub line) and mostly outside the frame, so the frame's own corner shows. */
 .zodiac-charm {
   position: absolute;
-  top: -6%;
+  top: -2%;
   right: -6%;
-  width: 30%;
-  height: 30%;
+  width: 24%;
+  height: 24%;
   pointer-events: none;
   filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.18));
 }
