@@ -62,6 +62,7 @@ committee:
     git: caiww1117
     mbti: INTJ
     mbti_frame: intj-owl
+    zodiac: scorpio
 
   - role: Incoming PhD Student
     name: Masoud Mozafari
@@ -78,6 +79,7 @@ committee:
     git: Yinhx614
     mbti: INTJ
     mbti_frame: intj-owl
+    zodiac: gemini
 
   - role: Research Assistant
     name: Chengxin Hu (Albert)
