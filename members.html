@@ -1,0 +1,1121 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+    <link rel="icon" href="/logo.jpg"/>
+    <title>AI4PhysSci Lab</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="static/images/ai4qclogo.png"
+                    height="auto"
+            width="180px"
+            />
+        </a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+              
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="index.html"
+                      
+                      >Home</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown2" role="button" data-toggle="dropdown"
+                      
+                      >Research</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      
+                      <a class="dropdown-item" href="overview.html">🌐 Overview</a>
+                      
+                      <a class="dropdown-item" href="simulator.html">🧪 Simulator</a>
+                      
+                      <a class="dropdown-item" href="emulator.html">⚙️ Emulator</a>
+                      
+                      <a class="dropdown-item" href="sampler.html">🔍 Sampler</a>
+                      
+                      <a class="dropdown-item" href="predictor.html">🔮 Predictor</a>
+                      
+                      <a class="dropdown-item" href="evaluator_agent.html">📝 Evaluator &amp; 🤖 Agent</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="members.html"
+                      
+                      >Members</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown4" role="button" data-toggle="dropdown"
+                      
+                      >Publications</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      
+                      <a class="dropdown-item" href="prehkust.html">Pre-HKUST</a>
+                      
+                      <a class="dropdown-item" href="hkust.html">HKUST</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="news.html"
+                      
+                      >News</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown6" role="button" data-toggle="dropdown"
+                      
+                      >Openings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                      
+                      <a class="dropdown-item" href="openings.html">Openings &amp; Suggested Courses</a>
+                      
+                      <a class="dropdown-item" href="hkust_credits.html">HKUST UROP, FYP, &amp; Master Research</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="tools.html"
+                      
+                      >Tools</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown7">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="https://awiki-ai4qcpages.work/"
+                      
+                      >InternalWiki</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown8">
+                      
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="page-wrapper">
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+             
+        </div>
+        <!-- Content -->
+        <div class="content">
+             
+
+
+<div class="section-band text-center">
+  <h2>Current Members</h2>
+</div>
+
+
+<div class="row">
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="https://sherrylixuecheng.github.io/"><h5 class="card-title" align="center">Lixue Cheng (Sherry)</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Principal Investigator
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            PhD, California Institute of Technology
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            BS, University of Wisconsin-Madison
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="https://sherrylixuecheng.github.io/cv/"
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:lixuecheng@ust.hk"
+              >✉️</a
+            >
+            <a class="text-muted" href="http://twitter.com/SherryLixueC"
+              > @SherryLixueC</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/sherrylixuecheng"
+              >GitHub: sherrylixuecheng</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 16% 16% 18% 16%;">
+            <div class="mbti-frame-window"><img src="static/images/sherry.jpg" class="mbti-frame-photo" alt="Lixue Cheng (Sherry)" /></div>
+            <img src="static/images/mbti/frames/enfp-shiba.png" class="mbti-frame-overlay" alt="ENFP frame" />
+            
+            <img src="static/images/mbti/charms/gemini.png" class="zodiac-charm" alt="gemini charm" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="https://www.zlsong.com"><h5 class="card-title" align="center">Zhilong Song</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Postdoctoral Fellow
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            PhD in Physics, Southeast University
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="https://www.zlsong.com"
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:zhilong@seu.edu.cn"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/szl666"
+              >GitHub: szl666</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 14% 15% 20% 15%;">
+            <div class="mbti-frame-window"><img src="static/images/zhilong_song.jpg" class="mbti-frame-photo" alt="Zhilong Song" /></div>
+            <img src="static/images/mbti/frames/entj-lion.png" class="mbti-frame-overlay" alt="ENTJ frame" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="https://www.scholat.com/fusichao"><h5 class="card-title" align="center">Sichao Fu</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Postdoctoral Fellow
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            PhD in Information and Communication Engineering, Huazhong University of Science and Technology
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="https://www.scholat.com/fusichao"
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:fusichao_hust@163.com"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/https://github.com/SichaoFu"
+              >GitHub: https://github.com/SichaoFu</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-avatar mbti-plain">
+            <img src="static/images/sichao_fu.jpg" class="rounded mbti-avatar-img" style="height: 100px; width: auto; max-width: 100%; object-fit: cover;" />
+            
+          </div>
+          
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="https://wuyileiiiii.github.io/"><h5 class="card-title" align="center">Yilei Wu</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Postdoctoral Fellow (Joint w/ University of Cambridge, co-supervised by Prof. Bartomeu Monserrat)
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            PhD in Physics, Southeast University
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="https://wuyileiiiii.github.io/"
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:yw802@cam.ac.uk"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/wuyileiiiii"
+              >GitHub: wuyileiiiii</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 15% 15% 16% 15%;">
+            <div class="mbti-frame-window"><img src="static/images/yilei_wu.jpeg" class="mbti-frame-photo" alt="Yilei Wu" /></div>
+            <img src="static/images/mbti/frames/entp-fox.png" class="mbti-frame-overlay" alt="ENTP frame" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="https://peninsula824.github.io/"><h5 class="card-title" align="center">Tianyao Tan</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Research Student
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            Master student in Physics, HKUST
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="https://peninsula824.github.io/"
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:ttanag@connect.ust.hk"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/peninsula824"
+              >GitHub: peninsula824</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-avatar mbti-plain">
+            <img src="static/images/tianyao_tan.jpg" class="rounded mbti-avatar-img" style="height: 100px; width: auto; max-width: 100%; object-fit: cover;" />
+            
+          </div>
+          
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href=""><h5 class="card-title" align="center">Wenwei Cai</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            PhD Student
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            MEng. in Materials Physics and Chemistry, Peking University (2026 Fall, Chemistry(SC), HKUST)
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href=""
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:2301212698@stu.pku.edu.cn"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/caiww1117"
+              >GitHub: caiww1117</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 13% 16% 19% 15%;">
+            <div class="mbti-frame-window"><img src="static/images/wenwei_cai.jpg" class="mbti-frame-photo" alt="Wenwei Cai" /></div>
+            <img src="static/images/mbti/frames/intj-owl.png" class="mbti-frame-overlay" alt="INTJ frame" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href=""><h5 class="card-title" align="center">Masoud Mozafari</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Incoming PhD Student
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            BSc. in Applied Chemistry, Sharif University Of Technology (2027 Spring, Chemistry(SC), HKUST)
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href=""
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:masoudmozafarivanani@gmail.com"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/masoudmv"
+              >GitHub: masoudmv</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-avatar mbti-plain">
+            <img src="static/images/masoud_mozafari.jpg" class="rounded mbti-avatar-img" style="height: 100px; width: auto; max-width: 100%; object-fit: cover;" />
+            
+          </div>
+          
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href=""><h5 class="card-title" align="center">Haoxiang Yin</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Incoming PhD Student
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            MSc. in Chemistry, Sichuan University (2027 Spring, Chemistry(SC), HKUST)
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href=""
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:hxyin001@gmail.com"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/Yinhx614"
+              >GitHub: Yinhx614</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 13% 16% 19% 15%;">
+            <div class="mbti-frame-window"><img src="static/images/haoxiang_yin.jpg" class="mbti-frame-photo" alt="Haoxiang Yin" /></div>
+            <img src="static/images/mbti/frames/intj-owl.png" class="mbti-frame-overlay" alt="INTJ frame" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href=""><h5 class="card-title" align="center">Chengxin Hu (Albert)</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Research Assistant
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            MSc. in Precision Health and Medicine, NUS
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href=""
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:huchengxin38@gmail.com"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/ChengxinHU"
+              >GitHub: ChengxinHU</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 13% 16% 19% 15%;">
+            <div class="mbti-frame-window"><img src="static/images/chengxin_hu.jpg" class="mbti-frame-photo" alt="Chengxin Hu (Albert)" /></div>
+            <img src="static/images/mbti/frames/intj-owl.png" class="mbti-frame-overlay" alt="INTJ frame" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="https://cindy901717.github.io/"><h5 class="card-title" align="center">Xinyi Wu (Cindy)</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Undergraduate Research Assistant
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            3rd year, BS in Computer Sciences, University of Wisconsin-Madison
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="https://cindy901717.github.io/"
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:xwu573@wisc.edu"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/cindy901717"
+              >GitHub: cindy901717</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-avatar mbti-plain">
+            <img src="static/images/xinyi_wu.jpg" class="rounded mbti-avatar-img" style="height: 100px; width: auto; max-width: 100%; object-fit: cover;" />
+            
+          </div>
+          
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="na"><h5 class="card-title" align="center">Hiuyu Ting (Hiu)</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Undergraduate Research Assistant
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            3rd year, BSc in Chemistry (Minor in Computer Science), HKUST
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="na"
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:hytingaa@connect.ust.hk"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/TING-HiuYu"
+              >GitHub: TING-HiuYu</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 13% 13% 13% 13%;">
+            <div class="mbti-frame-window"><img src="static/images/hiuyu_ting.jpg" class="mbti-frame-photo" alt="Hiuyu Ting (Hiu)" /></div>
+            <img src="static/images/mbti/frames/estp-tiger.png" class="mbti-frame-overlay" alt="ESTP frame" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="nagatobigseven.github.io"><h5 class="card-title" align="center">Zongmin Zhang (Nagato)</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Undergraduate Research Assistant
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            3rd year, BEng in Computer Science (Minor in Chemistry), HKUSTs
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="https://www.linkedin.com/in/zongmin-zhang/"
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:zzhanghw@connect.ust.hk"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/NagatoBigSeven"
+              >GitHub: NagatoBigSeven</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 13% 16% 19% 15%;">
+            <div class="mbti-frame-window"><img src="static/images/zongmin_zhang.jpg" class="mbti-frame-photo" alt="Zongmin Zhang (Nagato)" /></div>
+            <img src="static/images/mbti/frames/intj-owl.png" class="mbti-frame-overlay" alt="INTJ frame" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href=""><h5 class="card-title" align="center">Heung Law (Tony)</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Undergraduate Research Assistant
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            2nd year, BSc in Chemistry (IRE Track), Minor in Mathematics, HKUST
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href=""
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:hlawac@connect.ust.hk"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/tonylawlawlaw"
+              >GitHub: tonylawlawlaw</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-avatar mbti-plain">
+            <img src="static/images/heung_law.jpg" class="rounded mbti-avatar-img" style="height: 100px; width: auto; max-width: 100%; object-fit: cover;" />
+            
+          </div>
+          
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 col-xs-6">
+    <div class="pp-card">
+      <div class="pp-card-header" class="text-muted">
+        <a href="https://github.com/zijunpang552"><h5 class="card-title" align="center">Zijun Pang</h5></a>
+        <div>
+          <h6 class="card-subtitle " align="center">
+            Undergraduate Research Assistant
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            2nd year, BEng in Communication Engineering, University of Electronic Science and Technology of China (UESTC)
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            
+          </h6>
+        </div>
+        <div>
+        <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href=""
+              >📄 CV</a>
+        </div>
+        <div>
+            <h6 class="card-subtitle " align="center">
+            Contact
+          </h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="mailto:zijunpang552@gmail.com"
+              >✉️</a
+            >
+            <h6 class="card-subtitle text-muted m-1" align="center">
+            <a class="text-muted" href="http://github.com/zijunpang552"
+              >GitHub: zijunpang552</a>
+        </h6>
+        </div>
+        <center>
+          
+          
+          <div class="mbti-frame" style="--mbti-window: 11% 11% 14% 11%;">
+            <div class="mbti-frame-window"><img src="static/images/zijun_pang.jpeg" class="mbti-frame-photo" alt="Zijun Pang" /></div>
+            <img src="static/images/mbti/frames/esfp-dolphin.png" class="mbti-frame-overlay" alt="ESFP frame" />
+            
+          </div>
+          
+        </center>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Area Chairs -->
+<div class="section-band text-center">
+  <h2>FYP students</h2>
+</div>
+
+<p>TBA</p>
+
+<div class="section-band text-center">
+  <h2>Alumni</h2>
+</div>
+<style>
+  td, th {
+    padding: 10px; /* Adjust the padding as needed */
+  }
+</style>
+
+<br />
+
+<table>
+<tr> <td>  Guanming Fang (UROP student, 2025 Fall, HKUST) </td>  </tr> 
+</table>
+</div>
+
+<div class="section-band text-center">
+  <h2>Friends &amp; Collaborators</h2>
+</div>
+
+<ul>
+  <li><strong>Kexiang Hao</strong> - 1st year Electronic and Computer Engineering, University of Electronic Science and Technology of China</li>
+  <li><strong>Bowen Zhang</strong> - 4th year Material Science & Engineering, Sichuan University</li>
+  <li><strong>Zheng Che</strong> - 2nd year master, Chemical Physics, University of Science and Technology of China</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2025 AI4PhysSci Lab, The Hong Kong University of Science and Technology.</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<script async type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>

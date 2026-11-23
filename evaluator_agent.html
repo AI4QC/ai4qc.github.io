@@ -1,0 +1,319 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+    <link rel="icon" href="/logo.jpg"/>
+    <title>AI4PhysSci Lab: Evaluator &amp; Agent</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="static/images/ai4qclogo.png"
+                    height="auto"
+            width="180px"
+            />
+        </a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+              
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="index.html"
+                      
+                      >Home</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown2" role="button" data-toggle="dropdown"
+                      
+                      >Research</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      
+                      <a class="dropdown-item" href="overview.html">🌐 Overview</a>
+                      
+                      <a class="dropdown-item" href="simulator.html">🧪 Simulator</a>
+                      
+                      <a class="dropdown-item" href="emulator.html">⚙️ Emulator</a>
+                      
+                      <a class="dropdown-item" href="sampler.html">🔍 Sampler</a>
+                      
+                      <a class="dropdown-item" href="predictor.html">🔮 Predictor</a>
+                      
+                      <a class="dropdown-item" href="evaluator_agent.html">📝 Evaluator &amp; 🤖 Agent</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="members.html"
+                      
+                      >Members</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown4" role="button" data-toggle="dropdown"
+                      
+                      >Publications</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      
+                      <a class="dropdown-item" href="prehkust.html">Pre-HKUST</a>
+                      
+                      <a class="dropdown-item" href="hkust.html">HKUST</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="news.html"
+                      
+                      >News</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown6" role="button" data-toggle="dropdown"
+                      
+                      >Openings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                      
+                      <a class="dropdown-item" href="openings.html">Openings &amp; Suggested Courses</a>
+                      
+                      <a class="dropdown-item" href="hkust_credits.html">HKUST UROP, FYP, &amp; Master Research</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="tools.html"
+                      
+                      >Tools</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown7">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="https://awiki-ai4qcpages.work/"
+                      
+                      >InternalWiki</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown8">
+                      
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="page-wrapper">
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+             
+        </div>
+        <!-- Content -->
+        <div class="content">
+            
+  <!-- Contact -->
+ <title>Insert image left</title>
+    <style>
+      .image-wrapper {
+      float: left;
+      width: 45%;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .text-content {
+      overflow: hidden; /* ensures container grows around floated content */
+    }
+  </style>
+</head>
+<body>
+
+  Evaluator & Agent are highly collaborative modules that  Collaboration with experiment teams
+    <div class="section-band text-center">
+  <h2>Evaluator : AI for Experimental Design</h2>
+</div>
+
+<div class="text-content">
+    <div class="image-wrapper">
+      <img src="static/images/odbo.jpg" alt="ODBO figure">
+    </div>
+    <p>The goal of this direction is to transform the experimental design by <b> replacing trial-and-error with few-shot minimal data adaptive optimization</b> with approaches like <b> Bayesian optimization (BO)</b>, <b> active learning</b>, and <b> reinforcement learning</b> to efficient exploration of <b>complex and high-dimensional experimental spaces</b>. In our research, we build our models with <b>uncertainty-aware algorithm, outlier managements, low-dimensional representations, and domain-specific priors</b> to ensure practical performance in noisy and constrained real-world chemistry experimental settings. By forming <b> feedback loops</b>, we hope to help the experimentalists to provide a general tool to acheive closed-loop discovery in chemistry, biology, and materials science.</p>
+
+
+    <p> <b> - <a href="https://arxiv.org/abs/2205.09548"> ODBO (Outlier-detected Bayesian Optimization)</a></b>: a ML protein directed evolution protocol that integrates low-dimensional and function-value-based protein encoding, search space prescreening with BO & outlier detection surrogate modeling to efficiently navigate noisy large sequence spaces and recommend high-fitness variants with minimal experimental cost.</p>
+
+
+    <div class="section-band text-center">
+  <h2>Problem-driven Fine-tuning and Benchmark Constructions for Scientific LLM Agent</h2>
+</div>
+
+    In this topic, we plan to construct <b> domain-specific</b> datasets by combining outputs from upstream <b>simulation/emulation/prediction layers with curated data from literature data-mining</b>. We are also interested in collaborating with computer scientists to develop scientist-centric evaluation metrics for Scientific LLMs (e.g., NatureLM). This targeted approach ensures that fine-tuning aligns with real scientific tasks, enabling LLM agents to learn domain-relevant reasoning, symbolic logic, and experimental workflows grounded in chemistry. This direction will involve close collaboration with computer science groups to bridge foundation models and scientific discovery.
+    <p>- <b><a href="https://arxiv.org/abs/2311.07361"> The impact of large language models on scientific discovery: a preliminary study using GPT-4</a></b> : Benchmark LLM4Sci performance in various tasks.</p> 
+
+
+
+    <div class="section-band text-center">
+  <h2>Scientific Multi-agent System</h2>
+</div>
+
+    <p>Our scientific multi-agent system research aims to blend AI reasoning, simulation, and automation layers so that different agents specialize in planning experiments, coordinating complex workflows, and validating results across the physical sciences. These projects emphasize modular "agents" that exchange intermediate results, re-plan when simulations fail, and incorporate human-domain expertise only when necessary. Representative efforts include:</p>
+    <p>- <b><a href="https://arxiv.org/abs/2606.05050"> Song, Z., Zhang, Z., <span style="font-variant: small-caps;">Cheng, L.</span> Autonomous Heterogeneous Catalyst Discovery with a Self-Evolving Multi-Agent Digital Twin (CatDT). arXiv:2606.05050. (2026).</a></b></p>
+    <p>- <b><a href="https://arxiv.org/abs/2601.10194"> Li, W., Ren, J., <span style="font-variant: small-caps;">Cheng, L.</span>, Gong, C. Autonomous Quantum Simulation through Large Language Model Agents. arXiv:2601.10194. (2026).</a></b></p>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2025 AI4PhysSci Lab, The Hong Kong University of Science and Technology.</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<script async type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>

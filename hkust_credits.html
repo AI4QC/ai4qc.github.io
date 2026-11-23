@@ -1,0 +1,320 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+    <link rel="icon" href="/logo.jpg"/>
+    <title>AI4PhysSci Lab: HKUST UROP, FYP, &amp; Master Research</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="static/images/ai4qclogo.png"
+                    height="auto"
+            width="180px"
+            />
+        </a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+              
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="index.html"
+                      
+                      >Home</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown2" role="button" data-toggle="dropdown"
+                      
+                      >Research</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      
+                      <a class="dropdown-item" href="overview.html">🌐 Overview</a>
+                      
+                      <a class="dropdown-item" href="simulator.html">🧪 Simulator</a>
+                      
+                      <a class="dropdown-item" href="emulator.html">⚙️ Emulator</a>
+                      
+                      <a class="dropdown-item" href="sampler.html">🔍 Sampler</a>
+                      
+                      <a class="dropdown-item" href="predictor.html">🔮 Predictor</a>
+                      
+                      <a class="dropdown-item" href="evaluator_agent.html">📝 Evaluator &amp; 🤖 Agent</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="members.html"
+                      
+                      >Members</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown4" role="button" data-toggle="dropdown"
+                      
+                      >Publications</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      
+                      <a class="dropdown-item" href="prehkust.html">Pre-HKUST</a>
+                      
+                      <a class="dropdown-item" href="hkust.html">HKUST</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="news.html"
+                      
+                      >News</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown6" role="button" data-toggle="dropdown"
+                      
+                      >Openings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                      
+                      <a class="dropdown-item" href="openings.html">Openings &amp; Suggested Courses</a>
+                      
+                      <a class="dropdown-item" href="hkust_credits.html">HKUST UROP, FYP, &amp; Master Research</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="tools.html"
+                      
+                      >Tools</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown7">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="https://awiki-ai4qcpages.work/"
+                      
+                      >InternalWiki</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown8">
+                      
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="page-wrapper">
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+             
+        </div>
+        <!-- Content -->
+        <div class="content">
+            
+<!-- Contact -->
+  <div class="section-band text-center">
+  <h2>Overview &amp; Sample Research Tracks</h2>
+</div>
+  <p><i><b>Historical page.</b> This page contains past information about UROP, FYP, and Master research projects from earlier years. It is kept here for reference only, and the arrangements described below may no longer apply.</i></p>
+  <p>In earlier years, HKUST students interested in UROP, Final Year Projects (FYP), or Master-level research contacted Prof. Cheng directly. Chemistry majors usually got in touch in November of Year 3 to fit the FYP timeline, while UROP and MSc students wrote to us at different times of the year. We were only ever able to take a small number of students, and we are grateful to everyone who showed interest.</p>
+  <p><b>Example research topics from earlier years</b></p>
+  <ul>
+    <li>Wavefunction Learning with Transformer: Extending the current Orbformer architectures to learn a general foundation model (FM) for excited states of molecular systems.</li>
+    <li>Orbital-based learning via Representation Learning and Graph Transformer.</li>
+    <li>Generative design of alloy and single-atom catalysts with new structures and metal-support configurations for electrochemical reactions (CO₂RR, NRR, OER).</li>
+    <li>Generative discovery of halide/sulfide/oxide solid-state electrolytes for Na/Li-ion batteries, with new crystal structures and improved ion migration pathways.</li>
+    <li>Generative exploration of candidate high-temperature superconductors with structural motifs beyond the known cuprate, iron-based, nickelate, and hydride families.</li>
+    <li>Environmental Chemistry Agents: Building AI agents that help with environmental monitoring, remediation planning, and data interpretation.</li>
+    <li>LLM for Material Agents: Fine-tuning large language models as specialized agents that assist materials discovery (catalysts, batteries, polymers).</li>
+    <li>LLM for Molecule Agents: Training molecular reasoning agents that interface with computation/automation pipelines for small-molecule design or reaction discovery.</li>
+    <li>AI for Quantum Computing / Agentic AI + Quantum Computing: Co-designing AI workflows and agents that plan, run, and optimize quantum computing tasks, such as hardware calibration, error mitigation, circuit design, and variational algorithms.</li>
+    <li>Quantum Computing for Quantum Chemistry: Developing quantum algorithms or simulators for strongly correlated molecules and materials.</li>
+    <li>Causal Inference and Mechanistic Interpretability for AI4Science: Developing causal-discovery and interpretability methods to understand what scientific ML models learn about molecules and materials.</li>
+    <li>AI Safety and Jailbreak Defense for Scientific LLMs: Building safeguards, red-teaming, and guardrails for LLM agents in chemistry, materials, and biology, to prevent misuse while keeping scientific work open.</li>
+  </ul>
+  <p>Students were also welcome to propose their own ideas related to our research in AI4Science and physical chemistry.</p>
+
+  <div class="section-band text-center">
+  <h2>HKUST Final Year Project (FYP)</h2>
+</div>
+  <p>Because of departmental arrangements and our limited capacity, FYP projects in our group were open to HKUST Chemistry majors and students in Chemical and Biological Engineering. Students usually contacted us in November of Year 3 to talk about project fit and preparation.</p>
+
+  <div class="section-band text-center">
+  <h2>HKUST Undergraduate Research Opportunities Program (UROP)</h2>
+</div>
+  <p>We hosted a small number of UROP projects on AI4Science, automation for quantum chemistry, and ML for materials, and these were open to HKUST undergraduates from all majors. Since most of our collaboration happens on GitHub, students sometimes shared a GitHub account or an example repository when they wrote to us, which helped us plan a suitable starting point. This was never required.</p>
+
+  <div class="section-band text-center">
+  <h2>Master Research (Taught MSc)</h2>
+</div>
+  <p>Taught Master (MSc) students in Chemistry, Physics, or Chemical and Biological Engineering who were interested in research-for-credit or thesis-style projects contacted us with a brief note on their interests and background. We worked with the Chemistry Department so that each project fitted the student's program requirements.</p>
+
+  <div class="section-band text-center">
+  <h2>Q &amp; A (from earlier years)</h2>
+</div>
+  <p><b>[FYP] Q1: When did students contact Prof. Cheng about FYP?</b></p>
+  <p>A1: Usually in early November of Year 3.</p>
+  <p><b>[FYP] Q2: Did students need to contact Prof. Cheng before submitting the form?</b></p>
+  <p>A2: Yes. We asked Chemistry and CBE students to talk with Prof. Cheng about a possible project before listing our group as their first choice, so that we could make sure the project suited them.</p>
+  <p><b>[FYP & UROP] Q3: How many students did the group take?</b></p>
+  <p>A3: Only a small number each year, depending on how much supervision time we had, so that each student could get enough guidance.</p>
+  <p><b>[FYP & UROP & MSc] Q4: What background was helpful?</b></p>
+  <p>A4: Some Python coding and chemistry intuition were helpful, but no prior research experience was needed. Most of all, we enjoyed working with students who were curious about AI for Science.</p>
+  <p><b>[FYP & UROP] Q5: Could students start in Year 3 and continue into FYP?</b></p>
+  <p>A5: When we had space, some students joined as research interns or UROP students in the spring or summer of Year 3 and found it useful preparation for their FYP.</p>
+  <p><b>[FYP & UROP] Q6: Could non-Chemistry undergraduates join?</b></p>
+  <p>A6: FYP was available to Chemistry majors and students in Chemical and Biological Engineering. UROP was open to undergraduates from all HKUST majors.</p>
+  <p><b>[MSc] Q7: How did taught Master (MSc) students work with the group?</b></p>
+  <p>A7: Students contacted us early in their program, and we planned a project for 3 research credits (one semester) or 6 research credits (two semesters). Program coordinators can explain the credit arrangements.</p>
+  <p><b>[MSc] Q8: Did you take MPhil students through this process?</b></p>
+  <p>A8: No. These arrangements covered taught Master (MSc) research-credit projects only.</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2025 AI4PhysSci Lab, The Hong Kong University of Science and Technology.</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<script async type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>

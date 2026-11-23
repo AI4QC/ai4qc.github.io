@@ -1,0 +1,506 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+    <link rel="icon" href="/logo.jpg"/>
+    <title>AI4PhysSci Lab</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="static/images/ai4qclogo.png"
+                    height="auto"
+            width="180px"
+            />
+        </a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+              
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="index.html"
+                      
+                      >Home</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown2" role="button" data-toggle="dropdown"
+                      
+                      >Research</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      
+                      <a class="dropdown-item" href="overview.html">🌐 Overview</a>
+                      
+                      <a class="dropdown-item" href="simulator.html">🧪 Simulator</a>
+                      
+                      <a class="dropdown-item" href="emulator.html">⚙️ Emulator</a>
+                      
+                      <a class="dropdown-item" href="sampler.html">🔍 Sampler</a>
+                      
+                      <a class="dropdown-item" href="predictor.html">🔮 Predictor</a>
+                      
+                      <a class="dropdown-item" href="evaluator_agent.html">📝 Evaluator &amp; 🤖 Agent</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="members.html"
+                      
+                      >Members</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown4" role="button" data-toggle="dropdown"
+                      
+                      >Publications</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      
+                      <a class="dropdown-item" href="prehkust.html">Pre-HKUST</a>
+                      
+                      <a class="dropdown-item" href="hkust.html">HKUST</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="news.html"
+                      
+                      >News</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown6" role="button" data-toggle="dropdown"
+                      
+                      >Openings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                      
+                      <a class="dropdown-item" href="openings.html">Openings &amp; Suggested Courses</a>
+                      
+                      <a class="dropdown-item" href="hkust_credits.html">HKUST UROP, FYP, &amp; Master Research</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="tools.html"
+                      
+                      >Tools</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown7">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="https://awiki-ai4qcpages.work/"
+                      
+                      >InternalWiki</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown8">
+                      
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+
+<style>
+    .back {
+        position: relative;
+        background: url("static/images/hkust.jpg") center/cover no-repeat;
+        background-color: rgba(48, 89, 176, 0.7);
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 35px 70px rgba(15, 23, 54, 0.35);
+    }
+    .back h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        color: #A28544;
+        text-shadow: 0 12px 36px rgba(0, 0, 0, 0.55);
+        letter-spacing: 0.04em;
+        display: inline-block;
+        padding: 0.85rem 2.6rem;
+        background: rgba(25, 49, 122, 0.55);
+        border-radius: 999px;
+        margin: 0;
+    }
+    .avatar-launcher {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 1100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.35rem;
+    }
+    .avatar-launcher button {
+        border: none;
+        background: transparent;
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        padding: 0;
+    }
+    .avatar-launcher button img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    @keyframes avatarWave {
+        0% { transform: scale(1) rotate(0deg); }
+        25% { transform: scale(1.06) rotate(-4deg); }
+        50% { transform: scale(1.05) rotate(4deg); }
+        75% { transform: scale(1.03) rotate(-2deg); }
+        100% { transform: scale(1) rotate(0deg); }
+    }
+    .avatar-launcher button.avatar-animate img {
+        animation: avatarWave 0.85s ease;
+    }
+    .avatar-launcher button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    }
+    .avatar-launcher span {
+        font-size: 1.05rem;
+        color: #1d2d50;
+        font-weight: 600;
+        text-shadow: none;
+        letter-spacing: 0.01em;
+    }
+    .avatar-modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1200;
+        padding: 1rem;
+    }
+    .avatar-modal.open {
+        display: flex;
+    }
+    .avatar-modal-content {
+        background: #000;
+        border-radius: 18px;
+        overflow: hidden;
+        width: min(420px, 90vw);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+        position: relative;
+    }
+    .avatar-modal video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .avatar-modal button.close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        border: none;
+        color: #fff;
+        font-size: 1.1rem;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container back" style="padding-bottom: 120px; padding-top: 150px">
+    <div class="row header">
+        <div class="p-1 text-center col-md-12 col-sm-12">
+            <h2>Welcome to AI for Physical Sciences Lab @ HKUST <br> 欢迎来到物质科学人工智能实验室 @ 香港科技大学</h2>
+        </div>
+    </div>
+</div>
+
+<div class="avatar-launcher">
+    <button id="avatarButton" aria-label="Play welcome video">
+        <img src="static/images/avatar_actions/avatar.png" alt="Digital avatar thumbnail"/>
+    </button>
+    <span>Meet our avatar</span>
+</div>
+<div class="avatar-modal" id="avatarModal" aria-hidden="true">
+    <div class="avatar-modal-content">
+        <button type="button" class="close-modal" id="closeAvatar" aria-label="Close video">×</button>
+        <video id="avatarVideo" controls preload="none">
+            <source src="static/images/welcome_video.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+
+
+<div class="page-wrapper">
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+             
+        </div>
+        <!-- Content -->
+        <div class="content">
+            
+
+<!-- <div class="alert alert-info" role="alert">
+    <center><strong>Please volunteer to the program committee <a href="https://forms.gle/rZp67YvMn1hnM6wV8">here</a>, both reviewers and ACs needed!</strong></center>
+</div> -->
+
+
+<div class="section-band text-center">
+  <h2>AI for Physical Sciences Lab</h2>
+</div>
+
+<div class="body-copy" style="padding-bottom: 50px">
+    <p>We are an <b>AI for science</b> lab rooted in the fields of <b>AI × quantum × chemistry</b> to develop <b>Lego-like AI-powered tools that revolutionize the chemistry research paradigm</b>. At our core, we’re dedicated to using the latest advances in artificial intelligence and quantum computing to create <b>practical, reliable tools</b> that tackle <b>real-world scientific challenges</b>. Guided by the philosophy of <b>“developing useful, not just fancy, tools,”</b> we explore the frontiers of AI4Science and build resources that scientists can truly use. While our central focus is on quantum chemistry, our interests extend broadly to address diverse challenges across the scientific landscape.</p>
+    <p>🔬 Applying <b>AI and deep learning</b> to solve <b>electronic-structure</b> problems, including complex and strongly correlated systems.</p>
+    <p>⚛️ Designing <b>AI-assisted quantum algorithms</b> for hardware and leveraging AI × quantum computing to accelerate chemical discovery.</p>
+    <p>🔗 Developing a <b>foundation model</b> for computational chemistry via <b>multi-scale, physics-informed models</b> that integrate <b>data-driven and physics-driven approaches</b>.</p>
+    <p>🌐 Building <b>experiment-friendly, open-source protocols</b> that bridge computational predictions with laboratory experiments.</p>
+    <p>🤝 We believe in <b>collaboration and community</b>: beyond fundamental research, we strive to make our tools accessible and user-friendly for experimentalists and non-AI experts. As active contributors to and members of the <b><a href="https://ai4sciencecommunity.github.io/">AI4Science community</a></b>, we are also engaged in outreach and education to inspire the next generation of scientists. We are members of the <b><a href="https://ccqs.hkust.edu.hk/">IAS Center for Complex Quantum Systems</a></b>, the <b><a href="https://iascasd.hkust.edu.hk/">IAS Center for AI for Scientific Discoveries</a></b>, and the <b><a href="https://vni.ust.hk/">HKUST Von Neumann Institute</a></b>, and we are affiliated with the <b><a href="https://chem.hkust.edu.hk/">HKUST Department of Chemistry</a></b> and the <b><a href="https://cbe.hkust.edu.hk/faculty">HKUST Department of Chemical and Biological Engineering</a></b>.</p>
+    <p>We welcome motivated students, researchers, and potential collaborators to <a href="openings.html">join us!</a> Let’s work together to push the boundaries of computational chemistry and AI for Science.</p>
+</div>
+
+<script>
+  (function () {
+    const button = document.getElementById("avatarButton");
+    const modal = document.getElementById("avatarModal");
+    const closeBtn = document.getElementById("closeAvatar");
+    const video = document.getElementById("avatarVideo");
+    const avatarImg = button.querySelector("img");
+    const avatarActionFrames = [
+      "你好.png",
+      "写代码.png",
+      "思考.png",
+      "有想法.png",
+      "比耶.png",
+      "谢谢.png",
+      "合作愉快.png",
+      "抓蝴蝶.png",
+      "摸摸头.png"
+    ].map(name => `static/images/avatar_actions/${name}`);
+    let actionTimer = null;
+
+
+    function triggerAvatarAction() {
+      avatarImg.src =
+        avatarActionFrames[Math.floor(Math.random() * avatarActionFrames.length)];
+    }
+
+    function scheduleNextAction(delayOverride) {
+      const delay =
+        typeof delayOverride === "number" ? delayOverride : 4000 + Math.random() * 3000;
+      actionTimer = setTimeout(() => {
+        triggerAvatarAction();
+        scheduleNextAction();
+      }, delay);
+    }
+
+    setTimeout(() => scheduleNextAction(), 10000);
+
+    function closeModal() {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      if (!video.paused) {
+        video.pause();
+      }
+      video.currentTime = 0;
+    }
+
+    button.addEventListener("click", function () {
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      video.play();
+    });
+
+    closeBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      closeModal();
+    });
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+  })();
+</script>
+
+<!-- Live2D widget (kanban musume) -->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+  L2Dwidget.init({
+    model: {
+      jsonPath: "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+      scale: 1
+    },
+    display: {
+      position: "right",
+      width: 170,
+      height: 300,
+      hOffset: 20,
+      vOffset: -10
+    },
+    mobile: {
+      show: true,
+      scale: 0.6
+    },
+    react: {
+      opacityDefault: 0.75,
+      opacityOnHover: 0.2
+    }
+  });
+</script>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2025 AI4PhysSci Lab, The Hong Kong University of Science and Technology.</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<script async type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>

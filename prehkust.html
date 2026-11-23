@@ -1,0 +1,304 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+    <link rel="icon" href="/logo.jpg"/>
+    <title>AI4PhysSci Lab: Pre-HKUST</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="static/images/ai4qclogo.png"
+                    height="auto"
+            width="180px"
+            />
+        </a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+              
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="index.html"
+                      
+                      >Home</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown2" role="button" data-toggle="dropdown"
+                      
+                      >Research</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      
+                      <a class="dropdown-item" href="overview.html">🌐 Overview</a>
+                      
+                      <a class="dropdown-item" href="simulator.html">🧪 Simulator</a>
+                      
+                      <a class="dropdown-item" href="emulator.html">⚙️ Emulator</a>
+                      
+                      <a class="dropdown-item" href="sampler.html">🔍 Sampler</a>
+                      
+                      <a class="dropdown-item" href="predictor.html">🔮 Predictor</a>
+                      
+                      <a class="dropdown-item" href="evaluator_agent.html">📝 Evaluator &amp; 🤖 Agent</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="members.html"
+                      
+                      >Members</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown4" role="button" data-toggle="dropdown"
+                      
+                      >Publications</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      
+                      <a class="dropdown-item" href="prehkust.html">Pre-HKUST</a>
+                      
+                      <a class="dropdown-item" href="hkust.html">HKUST</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="news.html"
+                      
+                      >News</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown6" role="button" data-toggle="dropdown"
+                      
+                      >Openings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                      
+                      <a class="dropdown-item" href="openings.html">Openings &amp; Suggested Courses</a>
+                      
+                      <a class="dropdown-item" href="hkust_credits.html">HKUST UROP, FYP, &amp; Master Research</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="tools.html"
+                      
+                      >Tools</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown7">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="https://awiki-ai4qcpages.work/"
+                      
+                      >InternalWiki</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown8">
+                      
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="page-wrapper">
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+             
+        </div>
+        <!-- Content -->
+        <div class="content">
+            
+
+<h2>
+    Pre-HKUST Publication
+</h2>
+<div class="h5" style="line-height: 1.5;">
+<p><sup>#</sup> Co-first author; <sup>*</sup> Corresponding author</p>
+<p>🔮[20] Simm, G.N.C., Helie, J., Schulz, H., Chen,Y., Simeon, G., Kuzina, A., Martinez-Baez, E., Gasparotto, P., Tocci, G., Chen, C., Li, Y., <strong>Cheng, L.</strong>, Wang, Z., Nguyen, B.H., Smith, J.A. and Sun, L.<sup>*</sup> SimPoly: Simulation of Polymers with Machine Learning Force Fields Derived from First Principles. <em>Nat. Commun.</em>, <strong>2026</strong>. <a href="https://www.nature.com/articles/s41467-026-78736-x">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1038/s41467-026-78736-x"></span></p>
+<p>🧪[19] Foster, A.<sup>#</sup>; Schätzle, Z.<sup>#</sup>; Szabó, P. B.<sup>#</sup>; <strong>Cheng, L.</strong><sup>#</sup>; Köhler, J.; Cassella, G.; Gao, N.; Li, J.; Noé, F.<sup>*</sup>; Hermann, J.<sup>*</sup> An ab initio Foundation Model of Wavefunctions that Accurately Describes Chemical Bond Breaking. <em>Nat. Commun.</em>, <strong>2026</strong>. <a href="https://www.nature.com/articles/s41467-026-76604-2">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1038/s41467-026-76604-2"></span></p>
+<p>🧪[18] Sun, J.; <strong>Cheng, L.</strong>; Zhang, S.-X.<sup>*</sup> Stabilizer ground states for simulating quantum many-body physics: theory, algorithms, and applications, <em>Quantum</em>, <strong>2025</strong>.<a href="https://doi.org/10.22331/q-2025-06-24-1782">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.22331/q-2025-06-24-1782"></span></p>
+<p>🔮[17] Jacobson, G.<sup>#</sup>; <strong>Cheng, L.</strong><sup>#</sup>; Bhethanabotla, V; Sun, J; McCoy, A. B.<sup>*</sup>, Machine Learning Approaches for Developing Potential Surfaces: Applications to OH-(H2O)n (n=1-3) Complexes. <em>J. Phys. Chem. A</em>, <strong>2025</strong>. <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.4c08826">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jpca.4c08826"></span></p>
+<p>🧪[16] <strong>Cheng, L.</strong><sup>#</sup>; Szabó, P.B.<sup>#</sup>; Schätzle, Z.<sup>#</sup>; Kooi, D.; Köhler, J.; Giesbertz, K. J. H.; Noé, F.<sup>*</sup>; Hermann, J.<sup>*</sup>; Gori-Giorgi, P.<sup>*</sup>; Foster, A.<sup>*</sup> Highly Accurate Real-space Electron Densities with Neural Networks, <em>J. Chem. Phys.</em>, <strong>2025</strong>.<a href="https://doi.org/10.1063/5.0236919">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1063/5.0236919"></span></p>
+<p>🧪[15] <strong>Cheng, L.</strong><sup>#*</sup>; Chen, Y.-Q.<sup>#</sup>; Zhang, S.-X.<sup>*</sup>; Zhang, S.<sup>*</sup> Quantum Approximate Optimization via Learning-based Adaptive Optimization. <em>Commun. Phys.</em>, <strong>2024</strong>.<a href="https://www.nature.com/articles/s42005-024-01577-x">Link</a>,  <a href="https://www.nature.com/collections/dbgdehfjec">"Top 25 downloaded papers of 2024" on Communications Physics</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1038/s42005-024-01577-x"></span></p>
+<p>🧪[14] Sun, J.; <strong>Cheng, L.</strong>; Li, W.<sup>*</sup> Towards Chemical Accuracy with Shallow Quantum Circuits: A Clifford-Based Hamiltonian Engineering Approach.  <em>J. Chem. Theory Comput.</em>, <strong>2024</strong>.<a href="https://pubs.acs.org/doi/10.1021/acs.jctc.3c00886">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jctc.3c00886"></span></p>
+<p>🤖[13] MSR AI4Science^, MA Quantum. The Impact of Large Language Models on Scientific Discovery: A Preliminary Study Using GPT-4. arXiv:2311.07361 (2023).<a href="https://arxiv.org/abs/2311.07361">Link</a> (^Main contributor to Chapter 4, see Authorship and contribution list) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2311.07361"></span></p>
+<p>🧪[12] Li, W; Allcock, J.; <strong>Cheng, L.</strong>; Zhang, S.-X.; Chen, Y.-Q.; Mailoa, J.P.; Shuai, Z.; Zhang, S.<sup>*</sup> TenCirChem: An Efficient Quantum Computational Chemistry Package for the NISQ Era. <em>J. Chem. Theory Comput.</em>, <strong>2023</strong>.<a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.3c00319">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jctc.3c00319"></span></p>
+<p>⚙️[11] <strong>Cheng, L.</strong>; Sun, J.; Deustua, J. E.; Bhethanabotla, V. C.; Miller III, T. F.<sup>*</sup> Molecular-Orbital-Based Machine Learning for Open-Shell and Multi-Reference Systems with Kernel Addition Gaussian Process Regression. <em>J. Chem. Phys.</em>, <strong>2022</strong>. <a href="https://aip.scitation.org/doi/10.1063/5.0110886">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1063/5.0110886"></span></p>
+<p>⚙️[10] Sun, J.; <strong>Cheng, L.</strong>; Miller III, T. F.<sup>*</sup> Molecular dipole moment learning via rotationally equivariant derivative kernels in molecular-orbital-based machine learning. <em>J. Chem. Phys.</em>, <strong>2022</strong>. <a href="https://aip.scitation.org/doi/10.1063/5.0101280">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1063/5.0101280"></span></p>
+<p>📝[9] <strong>Cheng, L.</strong><sup>#</sup>; Yang, Z.<sup>#</sup>; Hsieh, C.; Liao, B.; Zhang, S.<sup>*</sup> ODBO: Bayesian Optimization with Search Space Prescreening for Directed Protein Evolution. arXiv:2205.09548 (2022). <a href="https://arxiv.org/abs/2205.09548">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2205.09548"></span></p>
+<p>⚙️[8] <strong>Cheng, L.</strong>, Sun, J. &amp; Miller III, T. F.<sup>*</sup> Accurate Molecular-Orbital-Based Machine Learning Energies via Unsupervised Clustering of Chemical Space. <em>J. Chem. Theory Comput.</em>,  <strong>2022</strong>. <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.2c00396">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jctc.2c00396"></span></p>
+<p>🔮[7] Lu, F.<sup>#</sup>; <strong>Cheng, L.</strong><sup>#</sup>; DiRisio, R. J.<sup>#</sup>; Finney, J. M.; Boyer, M. A.; Moonkaen, P.; Sun, J.; Lee, S. J. R.; Deustua, J. E.; Miller III, T. F.; McCoy, A. B.<sup>*</sup> Fast Near Ab Initio Potential Energy Surfaces Using Machine Learning. <em>J. Phys. Chem. A</em>, <strong>2022</strong>. <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.2c02243">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jpca.2c02243"></span></p>
+<p>⚙️[6] Sun, J.; <strong>Cheng, L.</strong>; Miller III, T. F.<sup>*</sup> Molecular Energy Learning Using Alternative Blackbox Matrix-Matrix Multiplication (AltBBMM) Algorithm for Exact Gaussian Process. arXiv:2109.09817 (2021). (Accepted for presentation at the NeurIPS 2021 AI for Science Workshop) <a href="https://openreview.net/pdf?id=lyJ9BRKUzms">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-arxiv-id="2109.09817"></span></p>
+<p>⚙️[5] Husch, T.; Sun, J.; <strong>Cheng, L.</strong>; Lee, S. J. R.; Miller III, T. F.<sup>*</sup> Improved Accuracy and Transferability of Molecular-Orbital-Based Machine Learning: Organics, Transition-Metal Complexes, Non-Covalent Interactions, and Transition States. <em>J. Chem. Phys.</em>, <strong>2021</strong>. <a href="https://aip.scitation.org/doi/abs/10.1063/5.0032362">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1063/5.0032362"></span></p>
+<p>⚙️[4] <strong>Cheng, L.</strong>; Kovachki, N. B.; Welborn, M.; Miller III, T. F.<sup>*</sup> Regression Clustering for Improved Accuracy and Training Costs with Molecular-Orbital-Based Machine Learning. <em>J. Chem. Theory Comput.</em>, <strong>2019</strong>. <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.9b00884">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jctc.9b00884"></span></p>
+<p>⚙️[3] <strong>Cheng, L.</strong>; Welborn, M.; Christensen, A. S.; Miller III, T. F.<sup>*</sup> A Universal Density Matrix Functional from Molecular Orbital-based Machine Learning: Transferability across Organic Molecules. <em>J. Chem. Phys.</em>, <strong>2019</strong>. <a href="https://aip.scitation.org/doi/full/10.1063/1.5088393">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1063/1.5088393"></span></p>
+<p>⚙️[2] Welborn, M.; <strong>Cheng, L.</strong>; Miller III, T. F.<sup>*</sup> Transferability in Machine Learning for Electronic Structure via the Molecular Orbital Basis. <em>J. Chem. Theory Comput.</em>, <strong>2018</strong>. <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.8b00636">Link</a> (Highlighted with commentary in <a href="https://cen.acs.org/physical-chemistry/computational-chemistry/Machine-learning-predicts-electronic-properties/96/web/2018/08">C&amp;EN</a> and <a href="http://www.caltech.edu/news/researchers-put-ai-work-making-chemistry-predictions-83357">Caltech News</a>; #5 of 6595 JCTC papers in Altmetric attention score) <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.jctc.8b00636"></span></p>
+<p>📝[1] Knowles, D. B.; Shkel, I. A.; Phan, N. M.; Sternke, M.; Lingeman, E.; Cheng, X.; <strong>Cheng, L.</strong>; O’Connor, K.; Record, M. T.<sup>*</sup> Chemical Interactions of Polyethylene Glycols (PEGs) and Glycerol with Protein Functional Groups: Applications to Effects of PEG and Glycerol on Protein Processes. <em>Biochemistry</em>, <strong>2015</strong>, 54 (22), 3528–3542. <a href="https://pubs.acs.org/doi/10.1021/acs.biochem.5b00246">Link</a> <span class="altmetric-embed" data-badge-type="donut" data-badge-width="20" data-doi="10.1021/acs.biochem.5b00246"></span></p>
+<h2>Patent:</h2>
+<ul>
+<li>
+<p>Miller III, T. F.; Welborn, M.; Cheng, L.; Husch, T.; Song, J.; Kovachiki, N.; Burov, D.; Teh, Y.S.; Anandkumar, A.; Ding, F.; Lee, S.J.R.; Qiao, Z.; Lale, A.S. Systems and methods for determining molecular structures with molecular-orbital-based features. U.S. Patent 16817489, 2020 <a href="https://patents.google.com/patent/US20200294630A1/en">Link</a></p>
+</li>
+<li>
+<p>程立雪; 杨子翊; 廖奔犇; 张胜誉 ; 对象确定方法、装置、计算机设备和存储介质, 2022-05-09, 中
+国, 2022104986847</p>
+</li>
+<li>
+<p>程立雪; 赖炫尧; 张胜誉 ; 分子能量的预测方法、装置、设备及存储介质, 2022-10-18, 中国,
+2022112749576</p>
+</li>
+</ul>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2025 AI4PhysSci Lab, The Hong Kong University of Science and Technology.</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<script async type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>

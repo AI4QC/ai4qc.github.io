@@ -1,0 +1,415 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+    <link rel="icon" href="/logo.jpg"/>
+    <title>AI4PhysSci Lab: Tools</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="static/images/ai4qclogo.png"
+                    height="auto"
+            width="180px"
+            />
+        </a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+              
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="index.html"
+                      
+                      >Home</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown2" role="button" data-toggle="dropdown"
+                      
+                      >Research</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      
+                      <a class="dropdown-item" href="overview.html">🌐 Overview</a>
+                      
+                      <a class="dropdown-item" href="simulator.html">🧪 Simulator</a>
+                      
+                      <a class="dropdown-item" href="emulator.html">⚙️ Emulator</a>
+                      
+                      <a class="dropdown-item" href="sampler.html">🔍 Sampler</a>
+                      
+                      <a class="dropdown-item" href="predictor.html">🔮 Predictor</a>
+                      
+                      <a class="dropdown-item" href="evaluator_agent.html">📝 Evaluator &amp; 🤖 Agent</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="members.html"
+                      
+                      >Members</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown4" role="button" data-toggle="dropdown"
+                      
+                      >Publications</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                      
+                      <a class="dropdown-item" href="prehkust.html">Pre-HKUST</a>
+                      
+                      <a class="dropdown-item" href="hkust.html">HKUST</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="news.html"
+                      
+                      >News</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle" href="#"
+                      
+                      id="navbarDropdown6" role="button" data-toggle="dropdown"
+                      
+                      >Openings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                      
+                      <a class="dropdown-item" href="openings.html">Openings &amp; Suggested Courses</a>
+                      
+                      <a class="dropdown-item" href="hkust_credits.html">HKUST UROP, FYP, &amp; Master Research</a>
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="tools.html"
+                      
+                      >Tools</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown7">
+                      
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link " href="https://awiki-ai4qcpages.work/"
+                      
+                      >InternalWiki</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown8">
+                      
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="page-wrapper">
+    <div class="container">
+        <!-- Tabs -->
+        <div class="tabs">
+             
+        </div>
+        <!-- Content -->
+        <div class="content">
+            
+  <style>
+    .tools-intro {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+    .tool-card {
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .tool-card:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+    .tool-card .card-title a {
+      color: #2e8b57;
+      text-decoration: none;
+    }
+    .tool-card .card-title a:hover {
+      text-decoration: underline;
+    }
+    .tool-module {
+      font-size: 0.85rem;
+      color: #6c757d;
+      white-space: nowrap;
+      margin-left: 0.5rem;
+    }
+    .tool-tagline {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 0.75rem;
+    }
+    .tool-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .tool-badge {
+      font-size: 0.78rem;
+      background: #f1f3f5;
+      color: #495057;
+      border-radius: 12px;
+      padding: 0.15rem 0.6rem;
+    }
+    .tool-badge-status {
+      background: #eaf5ef;
+      color: #2e8b57;
+    }
+    .tool-link {
+      font-size: 0.85rem;
+      margin-left: auto;
+    }
+    .tool-link-extra {
+      margin-left: 0;
+    }
+  </style>
+
+  <div class="section-band text-center">
+  <h2>🛠️ Tools &amp; Open-Source Software</h2>
+</div>
+  <div class="tools-intro">
+    <p>We believe in delivering <b>useful, not just fancy</b> tools. Everything below is developed or actively maintained by the AI4PhysSci Lab and released openly, following the modular
+      <a href="overview.html">Simulator → Emulator → Sampler → Predictor → Evaluator &amp; Agent</a> pipeline.</p>
+    <p>🔗 Full code base: <a href="https://github.com/AI4QC" target="_blank" rel="noopener">github.com/AI4QC</a>. Issues, pull requests, and collaborations are all welcome — see <a href="openings.html">Openings</a> if you would like to build these with us.</p>
+  </div>
+
+  <div class="row">
+  
+  <div class="col-lg-6 col-md-12 p-3">
+    <div class="card h-100 tool-card">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start">
+          <h4 class="card-title mb-1">
+            <a href="https://github.com/AI4QC/catdt-gs" target="_blank" rel="noopener">CatDT-GS</a>
+          </h4>
+          <span class="tool-module">🤖 Agent</span>
+        </div>
+        <p class="tool-tagline flex-grow-1">A self-evolving multi-agent system (digital twin) for autonomous heterogeneous catalysis discovery.</p>
+        <div class="tool-meta">
+          <span class="tool-badge">Python</span>
+          <span class="tool-badge tool-badge-status">Released · arXiv:2606.05050</span>
+          <a class="tool-link" href="https://github.com/AI4QC/catdt-gs" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+          
+          
+          
+          <a class="tool-link tool-link-extra" href="https://arxiv.org/abs/2606.05050" target="_blank" rel="noopener">Paper&nbsp;↗</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-6 col-md-12 p-3">
+    <div class="card h-100 tool-card">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start">
+          <h4 class="card-title mb-1">
+            <a href="https://github.com/AI4QC/PRIS" target="_blank" rel="noopener">PRIS</a>
+          </h4>
+          <span class="tool-module">🔎 Evaluator/🤖 Agent</span>
+        </div>
+        <p class="tool-tagline flex-grow-1">Plausibility Rules for Inorganic Structures: eight one-line laws, found by autonomous agents that proposed, tested and refuted two million candidates, that judge whether a crystal structure is physicochemically plausible and name the mechanism that fails. Cheap enough to screen a generator&#39;s output before any DFT.</p>
+        <div class="tool-meta">
+          <span class="tool-badge">Python</span>
+          <span class="tool-badge tool-badge-status">Released · arXiv:2609.01209</span>
+          <a class="tool-link" href="https://github.com/AI4QC/PRIS" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+          
+          
+          <a class="tool-link tool-link-extra" href="https://ai4qc.github.io/PRIS/" target="_blank" rel="noopener">Project page&nbsp;↗</a>
+          
+          
+          <a class="tool-link tool-link-extra" href="https://arxiv.org/abs/2609.01209" target="_blank" rel="noopener">Paper&nbsp;↗</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-6 col-md-12 p-3">
+    <div class="card h-100 tool-card">
+      <div class="card-body d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-start">
+          <h4 class="card-title mb-1">
+            <a href="https://github.com/AI4QC/materia-viva" target="_blank" rel="noopener">MateriaViva</a>
+          </h4>
+          <span class="tool-module">🔮 Predictor</span>
+        </div>
+        <p class="tool-tagline flex-grow-1">MateriaViva links 55 databases by structure into one resource of 14.6 million crystals and 131.8 million source-traced property values. Only 4.5% of the property matrix is filled; CGTNet supplies the rest as predictions kept apart from measurements. Use it to see how much performance is hidden in known crystals, and how new a generated crystal really is.</p>
+        <div class="tool-meta">
+          <span class="tool-badge">Python</span>
+          <span class="tool-badge tool-badge-status">Released · arXiv:2610.32678</span>
+          <a class="tool-link" href="https://github.com/AI4QC/materia-viva" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+          
+          
+          <a class="tool-link tool-link-extra" href="https://materia-viva.org/" target="_blank" rel="noopener">Project page&nbsp;↗</a>
+          
+          
+          <a class="tool-link tool-link-extra" href="https://arxiv.org/abs/2610.32678" target="_blank" rel="noopener">Paper&nbsp;↗</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  <div class="tools-intro mt-4">
+    <p class="text-muted" style="font-size: 0.9rem;">More projects are still in a private or pre-release state and will appear here once published. If a repository you need is not yet public, feel free to <a href="members.html">contact us</a>.</p>
+  </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2025 AI4PhysSci Lab, The Hong Kong University of Science and Technology.</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<script async type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>
