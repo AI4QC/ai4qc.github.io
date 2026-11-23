@@ -52,6 +52,11 @@ committee:
   - mbti_frame: `<frame name>` — replaces the photo with a decorated square frame
     from `static/images/mbti/frames/<frame name>.png` (the pill is then hidden, since the
     frame carries its own label)
+  - zodiac: `<charm name>` — optional pendant pinned to the top-right of the frame,
+    from `static/images/mbti/charms/<charm name>.png` (e.g. `gemini`). Only renders
+    when `mbti_frame` is set.
+
+Available charms: `gemini`.
 
 Available frames: `enfp-shiba`, `entj-lion`, `intj-owl`, `esfp-dolphin`, `entp-fox`, `estp-tiger`.
 

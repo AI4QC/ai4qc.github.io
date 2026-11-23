@@ -151,6 +151,9 @@ workshopgroup
           <div class="mbti-frame" style="--mbti-window: {{ frame.window }};">
             <div class="mbti-frame-window"><img src="{{org.im}}" class="mbti-frame-photo" alt="{{ org.name }}" /></div>
             <img src="static/images/mbti/frames/{{ org.mbti_frame }}.png" class="mbti-frame-overlay" alt="{{ org.mbti }} frame" />
+            {% if org.zodiac %}
+            <img src="static/images/mbti/charms/{{ org.zodiac }}.png" class="zodiac-charm" alt="{{ org.zodiac }} charm" />
+            {% endif %}
           </div>
           {% else %}
           <div class="mbti-avatar mbti-{{ mbti_groups.get(org.mbti, 'plain') }}">
